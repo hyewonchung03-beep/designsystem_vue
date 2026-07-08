@@ -1,0 +1,126 @@
+:root {
+  /* ── Common ── */
+  --color-common-white: #ffffff;
+  --color-common-black: #000000;
+
+  /* ── Neutral ── */
+  --color-neutral-25: #fafafa;
+  --color-neutral-50: #f5f5f5;
+  --color-neutral-100: #ebebeb;
+  --color-neutral-150: #e0e0e0;
+  --color-neutral-200: #d0d0d0;
+  --color-neutral-300: #ababab;
+  --color-neutral-400: #858585;
+  --color-neutral-500: #636363;
+  --color-neutral-600: #484848;
+  --color-neutral-650: #3d3d3d;
+  --color-neutral-700: #333333;
+  --color-neutral-750: #2a2a2a;
+  --color-neutral-800: #222222;
+  --color-neutral-850: #1c1c1c;
+  --color-neutral-900: #161616;
+  --color-neutral-950: #111111;
+
+  /* ── Brand ── */
+  --color-brand-25: #f5f4fd;
+  --color-brand-50: #e8e6f8;
+  --color-brand-100: #b5b1e2;
+  --color-brand-200: #9791d4;
+  --color-brand-300: #7b74c4;
+  --color-brand-400: #6058b4;
+  --color-brand-500: #4d469a;
+  --color-brand-600: #3a3480;
+  --color-brand-700: #282363;
+
+  /* ── Red ── */
+  --color-red-100: #fdeaeb;
+  --color-red-200: #f9c8ca;
+  --color-red-300: #f4a0a4;
+  --color-red-400: #ee7a80;
+  --color-red-500: #e76067;
+  --color-red-600: #b84451;
+  --color-red-700: #8a2e38;
+
+  /* ── Orange ── */
+  --color-orange-100: #fef0e6;
+  --color-orange-200: #fbcfa4;
+  --color-orange-300: #f6a96a;
+  --color-orange-400: #f08438;
+  --color-orange-500: #e06418;
+  --color-orange-600: #b34c0c;
+  --color-orange-700: #833606;
+
+  /* ── Yellow ── */
+  --color-yellow-100: #fdf8dc;
+  --color-yellow-200: #faedaa;
+  --color-yellow-300: #f5dc6a;
+  --color-yellow-400: #ecc824;
+  --color-yellow-500: #d4ae00;
+  --color-yellow-600: #a88900;
+  --color-yellow-700: #7a6400;
+
+  /* ── Green ── */
+  --color-green-100: #ecf8ed;
+  --color-green-200: #c9edcc;
+  --color-green-300: #96da9c;
+  --color-green-400: #5cc066;
+  --color-green-500: #35a142;
+  --color-green-600: #217d2c;
+  --color-green-700: #125a1b;
+
+  /* ── Teal ── */
+  --color-teal-100: #e0f6f5;
+  --color-teal-200: #b0e8e4;
+  --color-teal-300: #6dd4cc;
+  --color-teal-400: #1fbdb3;
+  --color-teal-500: #05a09a;
+  --color-teal-600: #007d78;
+  --color-teal-700: #005852;
+
+  /* ── Blue (Light Blue) ── */
+  --color-blue-100: #daf0fa;
+  --color-blue-200: #c2e6f7;
+  --color-blue-300: #7bccf5;
+  --color-blue-400: #5cb3df;
+  --color-blue-500: #3e9bca;
+  --color-blue-600: #2483b3;
+  --color-blue-700: #16658d;
+
+  /* ── Indigo ── */
+  --color-indigo-100: #dde4fa;
+  --color-indigo-200: #b8c6f5;
+  --color-indigo-300: #8ea4ee;
+  --color-indigo-400: #6280e4;
+  --color-indigo-500: #3d5ed6;
+  --color-indigo-600: #2644b8;
+  --color-indigo-700: #142e96;
+
+  /* ── Pink ── */
+  --color-pink-100: #fce6f4;
+  --color-pink-200: #f8c4e4;
+  --color-pink-300: #f296cc;
+  --color-pink-400: #e865b0;
+  --color-pink-500: #d03e94;
+  --color-pink-600: #a82278;
+  --color-pink-700: #7e0d5c;
+
+  /* ── Purple ── */
+  --color-purple-100: #f0e6fc;
+  --color-purple-200: #dfc8f8;
+  --color-purple-300: #c9a4f2;
+  --color-purple-400: #b07ee8;
+  --color-purple-500: #955dd6;
+  --color-purple-600: #783fc0;
+  --color-purple-700: #5a25a4;
+
+  /* ── Dark Extended Container Tints ── */
+  /* Used only in [data-theme='dark'] — unique brand-tinted dark backgrounds */
+  --color-orange-dark: #2e1a09;
+  --color-yellow-dark: #2e2a05;
+  --color-green-dark: #0d2410;
+  --color-teal-dark: #052e2c;
+  --color-blue-dark: #0d2635;
+  --color-indigo-dark: #0d1540;
+  --color-purple-dark: #1e0d3a;
+  --color-pink-dark: #2e0a20;
+}

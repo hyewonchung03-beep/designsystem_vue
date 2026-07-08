@@ -1,0 +1,112 @@
+---
+title: Overview
+sidebar_label: Overview
+sidebar_position: 1
+hide_title: true
+---
+
+<div className="foundation-overview">
+  <div className="foundation-overview__inner">
+    <div className="foundation-overview__header">
+      <div className="foundation-overview__title-block">
+        <h1>Foundations</h1>
+        <p>Foundations는 모든 디자인 요소의 기준이 되는 시각적 언어의 최소 단위입니다.</p>
+      </div>
+      <div className="foundation-overview__divider" />
+    </div>
+
+    <div className="foundation-overview__grid">
+
+      {/* Color */}
+      <a href="/foundation/color" className="foundation-overview-card">
+        <div className="foundation-overview-card__thumb">
+          <div className="color-overview-thumb" aria-hidden="true">
+            <div className="color-overview-thumb__circle color-overview-thumb__circle--left" />
+            <div className="color-overview-thumb__circle color-overview-thumb__circle--right" />
+          </div>
+        </div>
+        <div className="foundation-overview-card__body">
+          <span>Color</span>
+        </div>
+      </a>
+
+      {/* Elevation */}
+      <a href="/foundation/elevation" className="foundation-overview-card">
+        <div className="foundation-overview-card__thumb">
+          <svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="60" y="72" width="48" height="48" rx="8" fill="white"
+              style={{filter: 'drop-shadow(0px 0px 0.5px rgba(0,0,0,0.06)) drop-shadow(0px 2px 3px rgba(0,0,0,0.10))'}}/>
+            <rect x="120" y="72" width="48" height="48" rx="8" fill="white"
+              style={{filter: 'drop-shadow(0px 2px 4px rgba(0,0,0,0.10)) drop-shadow(0px 6px 6px rgba(0,0,0,0.10))'}}/>
+            <rect x="180" y="72" width="48" height="48" rx="8" fill="white"
+              style={{filter: 'drop-shadow(0px 4px 4px rgba(0,0,0,0.10)) drop-shadow(0px 16px 15px rgba(0,0,0,0.14))'}}/>
+          </svg>
+        </div>
+        <div className="foundation-overview-card__body">
+          <span>Elevation</span>
+        </div>
+      </a>
+
+      {/* Typography */}
+      <a href="/foundation/typography" className="foundation-overview-card">
+        <div className="foundation-overview-card__thumb">
+          <svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="typo-grad" x1="0.5" y1="0" x2="0.5" y2="1">
+                <stop offset="0%" stopColor="#7b74c4"/>
+                <stop offset="100%" stopColor="#4d469a"/>
+              </linearGradient>
+            </defs>
+            <text x="144" y="148" textAnchor="middle" fontFamily="Pretendard,system-ui,sans-serif" fontSize="112" fontWeight="700" fill="url(#typo-grad)">T</text>
+          </svg>
+        </div>
+        <div className="foundation-overview-card__body">
+          <span>Typography</span>
+        </div>
+      </a>
+
+      {/* Spacing */}
+      <a href="/foundation/spacing" className="foundation-overview-card">
+        <div className="foundation-overview-card__thumb">
+          <svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            {/* Outer box */}
+            <rect x="80" y="56" width="128" height="80" rx="6" fill="none" stroke="#c5c1e8" strokeWidth="1.5" strokeDasharray="4 3"/>
+            {/* Inner box */}
+            <rect x="104" y="76" width="80" height="40" rx="4" fill="#7b74c4" fillOpacity="0.12"/>
+            <rect x="104" y="76" width="80" height="40" rx="4" fill="none" stroke="#7b74c4" strokeWidth="1.5"/>
+            {/* Top spacing indicator */}
+            <line x1="144" y1="57" x2="144" y2="75" stroke="#955dd6" strokeWidth="1.2"/>
+            <line x1="138" y1="57" x2="150" y2="57" stroke="#955dd6" strokeWidth="1.2"/>
+            <line x1="138" y1="75" x2="150" y2="75" stroke="#955dd6" strokeWidth="1.2"/>
+            {/* Left spacing indicator */}
+            <line x1="81" y1="96" x2="103" y2="96" stroke="#955dd6" strokeWidth="1.2"/>
+            <line x1="81" y1="90" x2="81" y2="102" stroke="#955dd6" strokeWidth="1.2"/>
+            <line x1="103" y1="90" x2="103" y2="102" stroke="#955dd6" strokeWidth="1.2"/>
+          </svg>
+        </div>
+        <div className="foundation-overview-card__body">
+          <span>Spacing</span>
+        </div>
+      </a>
+
+      {/* Iconography */}
+      <a href="/foundation/iconography" className="foundation-overview-card">
+        <div className="foundation-overview-card__thumb">
+          <svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="112" y="64" width="64" height="64" stroke="rgba(149,93,214,0.24)" strokeWidth="1" fill="none"/>
+            <circle cx="144" cy="96" r="30" fill="#7b74c4"/>
+            <path d="M133 97l8 8 15-15" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <rect x="109" y="61" width="6" height="6" rx="1" fill="#955dd6"/>
+            <rect x="173" y="61" width="6" height="6" rx="1" fill="#955dd6"/>
+            <rect x="109" y="125" width="6" height="6" rx="1" fill="#955dd6"/>
+            <rect x="173" y="125" width="6" height="6" rx="1" fill="#955dd6"/>
+          </svg>
+        </div>
+        <div className="foundation-overview-card__body">
+          <span>Iconography</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>

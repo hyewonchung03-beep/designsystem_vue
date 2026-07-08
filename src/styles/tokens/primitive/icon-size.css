@@ -1,0 +1,13 @@
+/* Icon Size Tokens
+   Figma: ic_responsive — 허용된 7가지 아이콘 크기만 사용
+   node 5571-244029 */
+
+:root {
+  --sol-icon-size-12: 12px;
+  --sol-icon-size-14: 14px;
+  --sol-icon-size-16: 16px;
+  --sol-icon-size-20: 20px;
+  --sol-icon-size-24: 24px;
+  --sol-icon-size-28: 28px;
+  --sol-icon-size-32: 32px;
+}

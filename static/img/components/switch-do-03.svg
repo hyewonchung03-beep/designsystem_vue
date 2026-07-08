@@ -1,0 +1,45 @@
+<svg width="442" height="130" viewBox="0 0 442 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+:root {
+  --sol-element-primary: #161616;
+  --sol-element-tertiary: #636363;
+  --sol-element-quaternary: #858585;
+  --sol-element-brand-variant: #3a3480;
+  --sol-fill-active: #4d469a;
+  --sol-surface: #ffffff;
+  --sol-error-dim: #b84451;
+  --sol-static-white: #ffffff;
+  --sol-static-black: #000000;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sol-element-primary: #ffffff;
+    --sol-element-tertiary: rgba(255, 255, 255, 0.60);
+    --sol-element-quaternary: rgba(255, 255, 255, 0.50);
+    --sol-element-brand-variant: #ffffff;
+    --sol-fill-active: #7b74c4;
+    --sol-surface: #161616;
+    --sol-error-dim: #e76067;
+  }
+}
+</style>
+
+<g clip-path="url(#clip0_1670_180161)">
+<rect x="159" y="49" width="52" height="32" rx="16" fill="var(--sol-fill-active)"/>
+<rect x="182" y="52" width="26" height="26" rx="13" fill="var(--sol-surface)"/>
+<path d="M201.057 61.7207L193.658 69.1198C193.365 69.4126 192.891 69.4127 192.598 69.1198L188.945 65.4674L190.006 64.4069L193.128 67.5286L199.997 60.6602L201.057 61.7207Z" fill="var(--sol-element-brand-variant)"/>
+</g>
+<g clip-path="url(#clip1_1670_180161)">
+<rect x="231" y="49" width="52" height="32" rx="16" fill="var(--sol-element-primary)" fill-opacity="0.24"/>
+<rect x="234" y="52" width="26" height="26" rx="13" fill="var(--sol-surface)"/>
+<path d="M252.119 60.9404L248.06 64.9997L252.119 69.0596L251.059 70.1201L246.999 66.0609L242.939 70.1201L241.879 69.0596L245.938 64.9997L241.879 60.9404L242.939 59.8799L246.999 63.9385L251.059 59.8799L252.119 60.9404Z" fill="var(--sol-element-quaternary)"/>
+</g>
+<defs>
+<clipPath id="clip0_1670_180161">
+<rect x="159" y="49" width="52" height="32" rx="16" fill="var(--sol-surface)"/>
+</clipPath>
+<clipPath id="clip1_1670_180161">
+<rect x="231" y="49" width="52" height="32" rx="16" fill="var(--sol-surface)"/>
+</clipPath>
+</defs>
+</svg>

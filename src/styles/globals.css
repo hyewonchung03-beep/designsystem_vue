@@ -1,0 +1,16 @@
+/* ============================================================
+   SOLUM Design System — Global Styles
+
+   Consumer-facing base styles. Imported via @solum-ds/design-system/styles.
+   Includes design tokens and minimal global resets required by the DS.
+   ============================================================ */
+
+@import './tokens.css';
+
+html, body {
+  font-family: var(--sol-font-family);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

@@ -1,0 +1,73 @@
+<svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+:root {
+  --sol-primary: #282363;
+  --sol-element-brand-variant: #3a3480;
+  --sol-fill-active: #4d469a;
+  --sol-selected-container-variant: #f5f4fd;
+  --sol-surface: #ffffff;
+  --sol-surface-base-variant: #f5f5f5;
+  --sol-secondary-container: #e8e6f8;
+  --sol-element-primary: #161616;
+  --sol-element-secondary: #484848;
+  --sol-element-tertiary: #636363;
+  --sol-element-quaternary: #858585;
+  --sol-border-brand: #7b74c4;
+  --sol-border-normal-variant: rgba(0, 0, 0, 0.08);
+  --sol-border-solid-variant: #e0e0e0;
+  --sol-border-solid: #d0d0d0;
+  --sol-error: #e76067;
+  --sol-error-container: #fdeaeb;
+  --sol-static-white: #ffffff;
+  --sol-static-black: #000000;
+  --color-brand-400: #6058b4;
+  --color-teal-500: #05a09a;
+  --color-green-500: #35a142;
+  --color-yellow-500: #d4ae00;
+  --color-orange-500: #e06418;
+  --color-blue-500: #3e9bca;
+  --color-indigo-500: #3d5ed6;
+  --color-pink-500: #d03e94;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sol-primary: #9791d4;
+    --sol-element-brand-variant: #ffffff;
+    --sol-fill-active: #7b74c4;
+    --sol-selected-container-variant: rgba(0, 0, 0, 0.08);
+    --sol-surface: #161616;
+    --sol-surface-base-variant: #1c1c1c;
+    --sol-secondary-container: rgba(255, 255, 255, 0.16);
+    --sol-element-primary: #ffffff;
+    --sol-element-secondary: rgba(255, 255, 255, 0.8);
+    --sol-element-tertiary: rgba(255, 255, 255, 0.6);
+    --sol-element-quaternary: rgba(255, 255, 255, 0.5);
+    --sol-border-brand: #7b74c4;
+    --sol-border-normal-variant: rgba(255, 255, 255, 0.08);
+    --sol-border-solid-variant: #3d3d3d;
+    --sol-border-solid: #333333;
+    --sol-error: #ee7a80;
+    --sol-error-container: rgba(231, 96, 103, 0.24);
+    --sol-static-white: #ffffff;
+    --sol-static-black: #000000;
+  }
+}
+</style>
+<g clip-path="url(#clip0_1248_158004)">
+<rect x="41" y="72" width="86" height="13" rx="2" fill="var(--sol-element-primary)" fill-opacity="0.08"/>
+<rect x="41" y="97.373" width="175.268" height="5.74648" fill="var(--sol-element-primary)" fill-opacity="0.12"/>
+<rect x="41" y="97.373" width="123.549" height="5.74648" fill="var(--sol-fill-active)"/>
+<path d="M230.196 103.844C228.909 103.844 227.937 103.049 227.888 101.959H228.742C228.811 102.597 229.43 103.068 230.196 103.068C231.119 103.068 231.787 102.391 231.787 101.497C231.787 100.574 231.09 99.8964 230.137 99.8866C229.538 99.8768 229.076 100.063 228.811 100.525H227.957L228.458 96.6359H232.307V97.4216H229.194L228.929 99.5036H228.998C229.312 99.2581 229.793 99.0911 230.294 99.0911C231.649 99.0911 232.651 100.093 232.651 101.478C232.651 102.852 231.61 103.844 230.196 103.844ZM236.206 103.844C234.625 103.844 233.721 102.519 233.721 100.191C233.721 97.8832 234.645 96.5377 236.206 96.5377C237.768 96.5377 238.691 97.8832 238.691 100.191C238.691 102.519 237.777 103.844 236.206 103.844ZM236.206 103.059C237.227 103.059 237.826 102.027 237.826 100.191C237.826 98.3546 237.227 97.3038 236.206 97.3038C235.185 97.3038 234.576 98.3546 234.576 100.191C234.576 102.027 235.175 103.059 236.206 103.059ZM241.372 99.9357C240.449 99.9357 239.948 99.2482 239.948 98.2269C239.948 97.2252 240.468 96.5279 241.372 96.5279C242.305 96.5279 242.796 97.2252 242.796 98.2269C242.796 99.2482 242.285 99.9357 241.372 99.9357ZM241.372 99.3268C241.853 99.3268 242.079 98.8947 242.079 98.2269C242.079 97.5689 241.873 97.127 241.372 97.1368C240.9 97.1368 240.665 97.5689 240.665 98.2269C240.665 98.8947 240.9 99.3268 241.372 99.3268ZM245.712 103.844C244.789 103.854 244.279 103.157 244.288 102.145C244.279 101.134 244.809 100.437 245.712 100.437C246.636 100.437 247.127 101.134 247.127 102.145C247.127 103.157 246.616 103.854 245.712 103.844ZM245.712 103.235C246.184 103.235 246.41 102.803 246.41 102.145C246.41 101.478 246.204 101.036 245.712 101.045C245.241 101.055 244.996 101.478 244.996 102.145C244.996 102.803 245.231 103.235 245.712 103.235ZM240.645 103.746L245.536 96.6359H246.331L241.44 103.746H240.645Z" fill="var(--sol-element-secondary)"/>
+<rect x="41" y="115.492" width="60" height="8" rx="2" fill="var(--sol-element-primary)" fill-opacity="0.08"/>
+<rect y="140" width="302" height="52" fill="url(#paint0_linear_1248_158004)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1248_158004" x1="259.531" y1="192" x2="259.531" y2="140" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0.04"/>
+<stop offset="1" stop-color="var(--sol-surface)" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_1248_158004">
+<rect width="288" height="192" fill="var(--sol-surface)"/>
+</clipPath>
+</defs>
+</svg>

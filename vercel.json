@@ -1,5 +1,7 @@
 {
-  "buildCommand": "npm run build-storybook",
-  "outputDirectory": "storybook-static",
-  "framework": null
+  "git": {
+    "deploymentEnabled": {
+      "gh-pages": false
+    }
+  }
 }

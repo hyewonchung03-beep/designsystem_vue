@@ -1,0 +1,54 @@
+:root {
+  /* ── Alpha: Black ── */
+  --color-alpha-black-0: rgba(0, 0, 0, 0);
+  --color-alpha-black-4: rgba(0, 0, 0, 0.04);
+  --color-alpha-black-8: rgba(0, 0, 0, 0.08);
+  --color-alpha-black-12: rgba(0, 0, 0, 0.12);
+  --color-alpha-black-16: rgba(0, 0, 0, 0.16);
+  --color-alpha-black-24: rgba(0, 0, 0, 0.24);
+  --color-alpha-black-36: rgba(0, 0, 0, 0.36);
+  --color-alpha-black-40: rgba(0, 0, 0, 0.40);
+  --color-alpha-black-50: rgba(0, 0, 0, 0.50);
+  --color-alpha-black-60: rgba(0, 0, 0, 0.60);
+  --color-alpha-black-70: rgba(0, 0, 0, 0.70);
+  --color-alpha-black-80: rgba(0, 0, 0, 0.80);
+  --color-alpha-black-90: rgba(0, 0, 0, 0.90);
+  --color-alpha-black-96: rgba(0, 0, 0, 0.96);
+
+  /* ── Alpha: White ── */
+  --color-alpha-white-0: rgba(255, 255, 255, 0);
+  --color-alpha-white-4: rgba(255, 255, 255, 0.04);
+  --color-alpha-white-8: rgba(255, 255, 255, 0.08);
+  --color-alpha-white-12: rgba(255, 255, 255, 0.12);
+  --color-alpha-white-16: rgba(255, 255, 255, 0.16);
+  --color-alpha-white-24: rgba(255, 255, 255, 0.24);
+  --color-alpha-white-36: rgba(255, 255, 255, 0.36);
+  --color-alpha-white-50: rgba(255, 255, 255, 0.50);
+  --color-alpha-white-60: rgba(255, 255, 255, 0.60);
+  --color-alpha-white-70: rgba(255, 255, 255, 0.70);
+  --color-alpha-white-80: rgba(255, 255, 255, 0.80);
+  --color-alpha-white-90: rgba(255, 255, 255, 0.90);
+  --color-alpha-white-96: rgba(255, 255, 255, 0.96);
+
+  /* ── Alpha: Red (error states) ── */
+  --color-alpha-red-24: rgba(231, 96, 103, 0.24);
+  --color-alpha-red-36: rgba(231, 96, 103, 0.36);
+
+  /* ── Alpha: Extended colors (surface-outline, container) ── */
+  --color-alpha-orange-24: rgba(224, 100, 24, 0.24);
+  --color-alpha-orange-36: rgba(224, 100, 24, 0.36);
+  --color-alpha-yellow-24: rgba(212, 174, 0, 0.24);
+  --color-alpha-yellow-36: rgba(212, 174, 0, 0.36);
+  --color-alpha-green-24: rgba(53, 161, 66, 0.24);
+  --color-alpha-green-36: rgba(53, 161, 66, 0.36);
+  --color-alpha-teal-24: rgba(5, 160, 154, 0.24);
+  --color-alpha-teal-36: rgba(5, 160, 154, 0.36);
+  --color-alpha-blue-24: rgba(62, 155, 202, 0.24);
+  --color-alpha-blue-36: rgba(62, 155, 202, 0.36);
+  --color-alpha-indigo-24: rgba(61, 94, 214, 0.24);
+  --color-alpha-indigo-36: rgba(61, 94, 214, 0.36);
+  --color-alpha-purple-24: rgba(149, 93, 214, 0.24);
+  --color-alpha-purple-36: rgba(149, 93, 214, 0.36);
+  --color-alpha-pink-24: rgba(208, 62, 148, 0.24);
+  --color-alpha-pink-36: rgba(208, 62, 148, 0.36);
+}

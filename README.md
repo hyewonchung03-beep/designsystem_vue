@@ -1,24 +1,41 @@
-# Solum Design System
+# Website
 
-React component library with Storybook, generated from the [Component (Shared) Figma file](https://www.figma.com/design/YqKny45xSmjr76WGIXeL7P/Component--Shared-?node-id=51-158).
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Getting started
+## Installation
 
 ```bash
-npm install
-npm run storybook
+yarn
 ```
 
-Open [http://localhost:6006](http://localhost:6006) to browse components.
+## Local Development
 
-## Components
+```bash
+yarn start
+```
 
-- **Button** — primary, secondary, tertiary, danger, text, link variants
-- **Badge** — outlined/solid status indicators with color options
-- **Input** — labeled text field with helper text and states
-- **Checkbox** — with label, indeterminate, and size variants
-- **HorizontalBarChart** — bi-directional horizontal bar chart row
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Figma source
+## Build
 
-The Figma file contains many more sections (Navigation, Modal, Data table, Pickers, etc.). This repo includes a starter set aligned with the most common primitives; additional components can be added using the same pattern.
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

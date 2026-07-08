@@ -1,0 +1,115 @@
+/* Storybook entry: full Tailwind (preflight + theme + utilities) */
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/tailwind-theme.css";
+
+/* ── Storybook-only base styles ─────────────────────────────────────────────
+   (removed from globals.css to keep the consumer-facing export clean)       */
+#storybook-root {
+  min-height: 100vh;
+  background-color: var(--sol-surface);
+  color: var(--sol-element-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button[role="tab"]::before,
+button[role="tab"]::after {
+  content: none;
+  display: none;
+}
+
+/* Tell Tailwind to scan component and story source files */
+@source "../components";
+@source ".";
+
+/* ── Typography utilities ──────────────────────────────────────────────────
+   Tailwind v4에서 --font-size-text-* / --leading-text-* @theme 변수가
+   text-text-* / leading-text-* 유틸리티 CSS를 생성하지 않는 문제 해결.
+   --sol-* 토큰 직접 참조로 명시적 규칙 선언.
+   ───────────────────────────────────────────────────────────────────────── */
+
+.text-text-xxs  { font-size: var(--sol-font-size-text-xxs); }
+.text-text-xs   { font-size: var(--sol-font-size-text-xs); }
+.text-text-sm   { font-size: var(--sol-font-size-text-sm); }
+.text-text-md   { font-size: var(--sol-font-size-text-md); }
+.text-text-lg   { font-size: var(--sol-font-size-text-lg); }
+.text-text-xl   { font-size: var(--sol-font-size-text-xl); }
+.text-headline-sm { font-size: var(--sol-font-size-headline-sm); }
+.text-headline-md { font-size: var(--sol-font-size-headline-md); }
+.text-headline-lg { font-size: var(--sol-font-size-headline-lg); }
+.text-headline-xl { font-size: var(--sol-font-size-headline-xl); }
+.text-display-sm  { font-size: var(--sol-font-size-display-sm); }
+.text-display-md  { font-size: var(--sol-font-size-display-md); }
+.text-display-lg  { font-size: var(--sol-font-size-display-lg); }
+
+.leading-text-xxs        { line-height: var(--sol-line-height-text-xxs); }
+.leading-text-xs         { line-height: var(--sol-line-height-text-xs); }
+.leading-text-sm         { line-height: var(--sol-line-height-text-sm); }
+.leading-text-md         { line-height: var(--sol-line-height-text-md); }
+.leading-text-lg         { line-height: var(--sol-line-height-text-lg); }
+.leading-text-xl         { line-height: var(--sol-line-height-text-xl); }
+.leading-text-md-compact { line-height: var(--sol-line-height-text-md-compact); }
+.leading-text-sm-compact { line-height: var(--sol-line-height-text-sm-compact); }
+.leading-headline-sm     { line-height: var(--sol-line-height-headline-sm); }
+.leading-headline-md     { line-height: var(--sol-line-height-headline-md); }
+.leading-headline-lg     { line-height: var(--sol-line-height-headline-lg); }
+.leading-headline-xl     { line-height: var(--sol-line-height-headline-xl); }
+.leading-display-sm      { line-height: var(--sol-line-height-display-sm); }
+.leading-display-md      { line-height: var(--sol-line-height-display-md); }
+.leading-display-lg      { line-height: var(--sol-line-height-display-lg); }
+
+html,
+body,
+.sb-show-main,
+#storybook-root {
+  background: transparent !important;
+}
+
+.storybook-preview-layout {
+  display: flex;
+  width: 100%;
+  min-height: fit-content;
+  padding: 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.preview {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.storybook-preview-content {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+html[data-storybook-embed='component'],
+html[data-storybook-embed='component'] body,
+html[data-storybook-embed='component'] .sb-show-main,
+html[data-storybook-embed='component'] #storybook-root {
+  width: 100%;
+  min-height: fit-content;
+  background: transparent !important;
+}
+
+html[data-storybook-embed='component'] .storybook-preview-layout--embed {
+  min-height: fit-content;
+  padding: 0;
+  background: transparent;
+}
+
+html[data-storybook-embed='component'] .storybook-preview-layout--embed .storybook-preview-content {
+  width: fit-content;
+  max-width: 100%;
+  margin: auto;
+}
+

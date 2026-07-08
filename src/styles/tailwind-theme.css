@@ -1,0 +1,271 @@
+/* ============================================================
+   SOLUM Design System — Tailwind v4 Theme
+
+   Maps foundation tokens (--sol-*) to Tailwind theme variables.
+   Shared by both Storybook (tailwind.css) and Docusaurus (custom.css).
+   ============================================================ */
+
+@theme {
+  /* ── Color: Brand (primitive — defined in tokens.css :root) ── */
+  /* --color-brand-* values come from :root in tokens.css, no override needed */
+
+  /* ── Color: Red (primitive — defined in tokens.css :root) ── */
+  /* --color-red-* values come from :root in tokens.css, no override needed */
+
+  /* ── Color: Semantic — Element ── */
+  --color-element-brand: var(--sol-element-brand);
+  --color-element-brand-variant: var(--sol-element-brand-variant);
+  --color-element-primary: var(--sol-element-primary);
+  --color-element-secondary: var(--sol-element-secondary);
+  --color-element-tertiary: var(--sol-element-tertiary);
+  --color-element-quaternary: var(--sol-element-quaternary);
+  --color-element-inverse: var(--sol-element-inverse);
+  --color-element-inverse-variant: var(--sol-element-inverse-variant);
+  --color-element-disabled: var(--sol-element-disabled);
+  --color-element-subtle: var(--sol-element-subtle);
+
+  /* ── Color: Semantic — Text ── */
+  --color-text-tertiary: var(--sol-text-tertiary);
+
+  /* ── Color: Semantic — Surface ── */
+  --color-surface-default: var(--sol-surface);
+  --color-surface-variant: var(--sol-surface-variant);
+  --color-surface-bright: var(--sol-surface-bright);
+  --color-surface-container: var(--sol-surface-container);
+  --color-surface-container-low: var(--sol-surface-container-low);
+  --color-surface-container-high: var(--sol-surface-container-high);
+  --color-surface-container-highest: var(--sol-surface-container-highest);
+  --color-surface-base: var(--sol-surface-base);
+  --color-surface-base-variant: var(--sol-surface-base-variant);
+  --color-surface-inverse: var(--sol-surface-inverse);
+  --color-surface-inverse-surface: var(--sol-surface-inverse-surface);
+
+  /* ── Color: Semantic — Border ── */
+  --color-border-solid: var(--sol-border-solid);
+  --color-border-solid-variant: var(--sol-border-solid-variant);
+  --color-border-normal: var(--sol-border-normal);
+  --color-border-normal-variant: var(--sol-border-normal-variant);
+  --color-border-brand: var(--sol-border-brand);
+  --color-border-disabled: var(--sol-border-disabled);
+
+  /* ── Color: Semantic — Fill ── */
+  --color-fill-disabled: var(--sol-fill-disabled);
+  --color-fill-inactive: var(--sol-fill-inactive);
+  --color-fill-active: var(--sol-fill-active);
+  --color-fill-subtle: var(--sol-fill-subtle);
+
+  /* ── Color: Semantic — Interaction ── */
+  --color-interaction-neutral-normal: var(--sol-interaction-neutral-normal);
+  --color-interaction-neutral-hover: var(--sol-interaction-neutral-hover);
+  --color-interaction-neutral-pressed: var(--sol-interaction-neutral-pressed);
+  --color-interaction-inverse-normal: var(--sol-interaction-inverse-normal);
+  --color-interaction-inverse-hover: var(--sol-interaction-inverse-hover);
+  --color-interaction-inverse-pressed: var(--sol-interaction-inverse-pressed);
+
+  /* ── Color: Semantic — Error / Status ── */
+  --color-error: var(--sol-error);
+  --color-error-dim: var(--sol-error-dim);
+  --color-error-variant: var(--sol-error-variant);
+  --color-error-container: var(--sol-error-container);
+  --color-scrim: var(--sol-scrim);
+  --color-success: var(--color-green-500);
+  --color-warning: var(--color-yellow-500);
+  --color-info: var(--color-blue-500);
+
+  /* ── Color: Extended ── */
+  --color-orange: var(--sol-orange);
+  --color-orange-surface-outline: var(--sol-orange-surface-outline);
+  --color-orange-container: var(--sol-orange-container);
+  --color-orange-on-container: var(--sol-orange-on-container);
+  --color-yellow: var(--sol-yellow);
+  --color-yellow-surface-outline: var(--sol-yellow-surface-outline);
+  --color-yellow-container: var(--sol-yellow-container);
+  --color-yellow-on-container: var(--sol-yellow-on-container);
+  --color-green: var(--sol-green);
+  --color-green-surface-outline: var(--sol-green-surface-outline);
+  --color-green-container: var(--sol-green-container);
+  --color-green-on-container: var(--sol-green-on-container);
+  --color-teal: var(--sol-teal);
+  --color-teal-surface-outline: var(--sol-teal-surface-outline);
+  --color-teal-container: var(--sol-teal-container);
+  --color-teal-on-container: var(--sol-teal-on-container);
+  --color-light-blue: var(--sol-light-blue);
+  --color-light-blue-surface-outline: var(--sol-light-blue-surface-outline);
+  --color-light-blue-container: var(--sol-light-blue-container);
+  --color-light-blue-on-container: var(--sol-light-blue-on-container);
+  --color-indigo: var(--sol-indigo);
+  --color-indigo-surface-outline: var(--sol-indigo-surface-outline);
+  --color-indigo-container: var(--sol-indigo-container);
+  --color-indigo-on-container: var(--sol-indigo-on-container);
+  --color-purple: var(--sol-purple);
+  --color-purple-surface-outline: var(--sol-purple-surface-outline);
+  --color-purple-container: var(--sol-purple-container);
+  --color-purple-on-container: var(--sol-purple-on-container);
+  --color-pink: var(--sol-pink);
+  --color-pink-surface-outline: var(--sol-pink-surface-outline);
+  --color-pink-container: var(--sol-pink-container);
+  --color-pink-on-container: var(--sol-pink-on-container);
+
+  /* ── Color: Selection State ── */
+  --color-selected-container: var(--sol-selected-container);
+  --color-selected-container-variant: var(--sol-selected-container-variant);
+
+  /* ── Color: Primary / Secondary / Tertiary ── */
+  --color-primary: var(--sol-primary);
+  --color-primary-inverse: var(--sol-primary-inverse);
+  --color-secondary: var(--sol-secondary);
+  --color-secondary-container: var(--sol-secondary-container);
+  --color-tertiary: var(--sol-tertiary);
+  --color-tertiary-container: var(--sol-tertiary-container);
+
+  /* ── Color: Static (테마 불변) ── */
+  --color-static-white: var(--sol-static-white);
+  --color-static-black: var(--sol-static-black);
+
+  /* ── Font Family ── */
+  --font-sans: var(--sol-font-family);
+
+  /* ── Font Weight ── */
+  --font-weight-regular: var(--sol-font-weight-regular);
+  --font-weight-semibold: var(--sol-font-weight-semibold);
+
+  /* ── Line Height ── */
+  --leading-display-lg: var(--sol-line-height-display-lg);
+  --leading-display-md: var(--sol-line-height-display-md);
+  --leading-display-sm: var(--sol-line-height-display-sm);
+  --leading-headline-xl: var(--sol-line-height-headline-xl);
+  --leading-headline-lg: var(--sol-line-height-headline-lg);
+  --leading-headline-md: var(--sol-line-height-headline-md);
+  --leading-headline-sm: var(--sol-line-height-headline-sm);
+  --leading-text-xl: var(--sol-line-height-text-xl);
+  --leading-text-lg: var(--sol-line-height-text-lg);
+  --leading-text-md: var(--sol-line-height-text-md);
+  --leading-text-sm: var(--sol-line-height-text-sm);
+  --leading-text-xs: var(--sol-line-height-text-xs);
+  --leading-text-xxs: var(--sol-line-height-text-xxs);
+  --leading-text-md-compact: var(--sol-line-height-text-md-compact);
+  --leading-text-sm-compact: var(--sol-line-height-text-sm-compact);
+
+  /* ── Font Size ── */
+  --font-size-display-lg: var(--sol-font-size-display-lg);
+  --font-size-display-md: var(--sol-font-size-display-md);
+  --font-size-display-sm: var(--sol-font-size-display-sm);
+  --font-size-headline-xl: var(--sol-font-size-headline-xl);
+  --font-size-headline-lg: var(--sol-font-size-headline-lg);
+  --font-size-headline-md: var(--sol-font-size-headline-md);
+  --font-size-headline-sm: var(--sol-font-size-headline-sm);
+  --font-size-text-xl: var(--sol-font-size-text-xl);
+  --font-size-text-lg: var(--sol-font-size-text-lg);
+  --font-size-text-md: var(--sol-font-size-text-md);
+  --font-size-text-sm: var(--sol-font-size-text-sm);
+  --font-size-text-xs: var(--sol-font-size-text-xs);
+  --font-size-text-xxs: var(--sol-font-size-text-xxs);
+
+  /* ── Border Radius ── */
+  --radius-1: var(--sol-radius-1);
+  --radius-2: var(--sol-radius-2);
+  --radius-4: var(--sol-radius-4);
+  --radius-6: var(--sol-radius-6);
+  --radius-8: var(--sol-radius-8);
+  --radius-12: var(--sol-radius-12);
+  --radius-circle: var(--sol-radius-circle);
+
+  /* ── Box Shadow ── */
+  --shadow-extralight: var(--sol-shadow-extralight);
+  --shadow-light: var(--sol-shadow-light);
+  --shadow-normal: var(--sol-shadow-normal);
+  --shadow-emphasize: var(--sol-shadow-emphasize);
+  --shadow-strong: var(--sol-shadow-strong);
+  --shadow-heavy: var(--sol-shadow-heavy);
+  --shadow-focus-button-outer: var(--sol-shadow-focus-button-outer);
+  --shadow-focus-button-inner: var(--sol-shadow-focus-button-inner);
+  --shadow-focus-button-ring: var(--sol-shadow-focus-button-ring);
+
+  /* ── Spacing (token-based, numeric aliases) ── */
+  --spacing-0_5: var(--sol-gap-2);
+  --spacing-1: var(--sol-gap-4);
+  --spacing-1_5: var(--sol-gap-6);
+  --spacing-2: var(--sol-gap-8);
+  --spacing-2_5: var(--sol-gap-10);
+  --spacing-3: var(--sol-gap-12);
+  --spacing-4: var(--sol-gap-16);
+  --spacing-5: var(--sol-gap-20);
+  --spacing-6: var(--sol-gap-24);
+  --spacing-7_5: var(--sol-gap-30);
+  --spacing-9: var(--sol-gap-36);
+  --spacing-12: var(--sol-gap-48);
+  --spacing-14: var(--sol-gap-56);
+  --spacing-15: var(--sol-gap-60);
+
+  /* ── Spacing (sol-* named utilities: pt-sol-8, pl-sol-12, gap-sol-4 …) ── */
+  --spacing-sol-2: var(--sol-spacing-2);
+  --spacing-sol-4: var(--sol-spacing-4);
+  --spacing-sol-6: var(--sol-spacing-6);
+  --spacing-sol-8: var(--sol-spacing-8);
+  --spacing-sol-10: var(--sol-spacing-10);
+  --spacing-sol-12: var(--sol-spacing-12);
+  --spacing-sol-14: var(--sol-spacing-14);
+  --spacing-sol-16: var(--sol-spacing-16);
+  --spacing-sol-18: var(--sol-spacing-18);
+  --spacing-sol-20: var(--sol-spacing-20);
+  --spacing-sol-24: var(--sol-spacing-24);
+  --spacing-sol-30: var(--sol-spacing-30);
+  --spacing-sol-36: var(--sol-spacing-36);
+  --spacing-sol-42: var(--sol-spacing-42);
+  --spacing-sol-48: var(--sol-spacing-48);
+  --spacing-sol-56: var(--sol-spacing-56);
+  --spacing-sol-60: var(--sol-spacing-60);
+
+  /* ── Icon Size (ic_responsive: 7가지 허용 크기) ── */
+  --spacing-icon-12: var(--sol-icon-size-12);
+  --spacing-icon-14: var(--sol-icon-size-14);
+  --spacing-icon-16: var(--sol-icon-size-16);
+  --spacing-icon-20: var(--sol-icon-size-20);
+  --spacing-icon-24: var(--sol-icon-size-24);
+  --spacing-icon-28: var(--sol-icon-size-28);
+  --spacing-icon-32: var(--sol-icon-size-32);
+
+  /* ── Animation: Skeleton shimmer ── */
+  --animate-sol-shimmer: sol-shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes sol-shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ── Explicit typography utilities ──────────────────────────────────────────
+   Tailwind v4 does not auto-generate text-text-* / leading-text-* utilities
+   from --font-size-text-* / --leading-text-* @theme variables.
+   Defined explicitly so consumers don't need a separate workaround.
+   ───────────────────────────────────────────────────────────────────────── */
+
+.text-text-xxs   { font-size: var(--sol-font-size-text-xxs); }
+.text-text-xs    { font-size: var(--sol-font-size-text-xs); }
+.text-text-sm    { font-size: var(--sol-font-size-text-sm); }
+.text-text-md    { font-size: var(--sol-font-size-text-md); }
+.text-text-lg    { font-size: var(--sol-font-size-text-lg); }
+.text-text-xl    { font-size: var(--sol-font-size-text-xl); }
+.text-headline-sm  { font-size: var(--sol-font-size-headline-sm); }
+.text-headline-md  { font-size: var(--sol-font-size-headline-md); }
+.text-headline-lg  { font-size: var(--sol-font-size-headline-lg); }
+.text-headline-xl  { font-size: var(--sol-font-size-headline-xl); }
+.text-display-sm   { font-size: var(--sol-font-size-display-sm); }
+.text-display-md   { font-size: var(--sol-font-size-display-md); }
+.text-display-lg   { font-size: var(--sol-font-size-display-lg); }
+
+.leading-text-xxs        { line-height: var(--sol-line-height-text-xxs); }
+.leading-text-xs         { line-height: var(--sol-line-height-text-xs); }
+.leading-text-sm         { line-height: var(--sol-line-height-text-sm); }
+.leading-text-md         { line-height: var(--sol-line-height-text-md); }
+.leading-text-lg         { line-height: var(--sol-line-height-text-lg); }
+.leading-text-xl         { line-height: var(--sol-line-height-text-xl); }
+.leading-text-md-compact { line-height: var(--sol-line-height-text-md-compact); }
+.leading-text-sm-compact { line-height: var(--sol-line-height-text-sm-compact); }
+.leading-headline-sm     { line-height: var(--sol-line-height-headline-sm); }
+.leading-headline-md     { line-height: var(--sol-line-height-headline-md); }
+.leading-headline-lg     { line-height: var(--sol-line-height-headline-lg); }
+.leading-headline-xl     { line-height: var(--sol-line-height-headline-xl); }
+.leading-display-sm      { line-height: var(--sol-line-height-display-sm); }
+.leading-display-md      { line-height: var(--sol-line-height-display-md); }
+.leading-display-lg      { line-height: var(--sol-line-height-display-lg); }

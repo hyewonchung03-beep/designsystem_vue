@@ -1,0 +1,84 @@
+<svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+:root {
+  --sol-primary: #282363;
+  --sol-element-brand-variant: #3a3480;
+  --sol-fill-active: #4d469a;
+  --sol-selected-container-variant: #f5f4fd;
+  --sol-surface: #ffffff;
+  --sol-surface-base-variant: #f5f5f5;
+  --sol-secondary-container: #e8e6f8;
+  --sol-element-primary: #161616;
+  --sol-element-secondary: #484848;
+  --sol-element-tertiary: #636363;
+  --sol-element-quaternary: #858585;
+  --sol-border-brand: #7b74c4;
+  --sol-border-normal-variant: rgba(0, 0, 0, 0.08);
+  --sol-border-solid-variant: #e0e0e0;
+  --sol-border-solid: #d0d0d0;
+  --sol-error: #e76067;
+  --sol-error-container: #fdeaeb;
+  --sol-static-white: #ffffff;
+  --sol-static-black: #000000;
+  --color-brand-400: #6058b4;
+  --color-teal-500: #05a09a;
+  --color-green-500: #35a142;
+  --color-yellow-500: #d4ae00;
+  --color-orange-500: #e06418;
+  --color-blue-500: #3e9bca;
+  --color-indigo-500: #3d5ed6;
+  --color-pink-500: #d03e94;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sol-primary: #9791d4;
+    --sol-element-brand-variant: #ffffff;
+    --sol-fill-active: #7b74c4;
+    --sol-selected-container-variant: rgba(0, 0, 0, 0.08);
+    --sol-surface: #161616;
+    --sol-surface-base-variant: #1c1c1c;
+    --sol-secondary-container: rgba(255, 255, 255, 0.16);
+    --sol-element-primary: #ffffff;
+    --sol-element-secondary: rgba(255, 255, 255, 0.8);
+    --sol-element-tertiary: rgba(255, 255, 255, 0.6);
+    --sol-element-quaternary: rgba(255, 255, 255, 0.5);
+    --sol-border-brand: #7b74c4;
+    --sol-border-normal-variant: rgba(255, 255, 255, 0.08);
+    --sol-border-solid-variant: #3d3d3d;
+    --sol-border-solid: #333333;
+    --sol-error: #ee7a80;
+    --sol-error-container: rgba(231, 96, 103, 0.24);
+    --sol-static-white: #ffffff;
+    --sol-static-black: #000000;
+  }
+}
+</style>
+<g clip-path="url(#clip0_1248_157089)">
+<rect width="288" height="192" fill="var(--sol-surface-base-variant)"/>
+<g clip-path="url(#clip1_1248_157089)">
+<path d="M64 82C64 79.7909 65.7909 78 68 78H220C222.209 78 224 79.7909 224 82V112C224 114.209 222.209 116 220 116H68C65.7909 116 64 114.209 64 112V82Z" fill="var(--sol-surface)"/>
+<mask id="mask0_1248_157089" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="76" y="89" width="16" height="16">
+<path d="M88.481 96.6335C88.481 94.0746 86.4064 92.0001 83.8476 92C81.2887 92 79.2141 94.0745 79.2141 96.6335C79.2142 99.1923 81.2887 101.267 83.8476 101.267C86.4064 101.267 88.481 99.1923 88.481 96.6335ZM89.481 96.6335C89.481 98.0251 88.9748 99.2977 88.1386 100.281L90.4211 102.488L89.7258 103.207L87.427 100.983C86.4538 101.785 85.207 102.267 83.8476 102.267C80.7364 102.267 78.2142 99.7446 78.2141 96.6335C78.2141 93.5223 80.7364 91 83.8476 91C86.9587 91.0001 89.481 93.5223 89.481 96.6335Z" fill="var(--sol-element-primary)"/>
+</mask>
+<g mask="url(#mask0_1248_157089)">
+<rect x="76" y="89" width="16" height="16" fill="var(--sol-element-quaternary)"/>
+</g>
+<path d="M96 91C96 89.3431 97.3431 88 99 88H209C210.657 88 212 89.3431 212 91V103C212 104.657 210.657 106 209 106H99C97.3431 106 96 104.657 96 103V91Z" fill="var(--sol-element-primary)" fill-opacity="0.08"/>
+</g>
+<path d="M68 78.5H220C221.933 78.5 223.5 80.067 223.5 82V112C223.5 113.933 221.933 115.5 220 115.5H68C66.067 115.5 64.5 113.933 64.5 112V82C64.5 80.067 66.067 78.5 68 78.5Z" stroke="var(--sol-element-primary)" stroke-opacity="0.16"/>
+<path d="M64 64C64 62.3431 65.3431 61 67 61H108C109.657 61 111 62.3431 111 64V66C111 67.6569 109.657 69 108 69H67C65.3431 69 64 67.6569 64 66V64Z" fill="var(--sol-element-primary)" fill-opacity="0.08"/>
+<rect y="152" width="302" height="40" fill="url(#paint0_linear_1248_157089)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1248_157089" x1="259.531" y1="192" x2="259.531" y2="152" gradientUnits="userSpaceOnUse">
+<stop stop-color="var(--sol-surface-base-variant)"/>
+<stop offset="1" stop-color="var(--sol-surface-base-variant)" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_1248_157089">
+<rect width="288" height="192" fill="var(--sol-surface)"/>
+</clipPath>
+<clipPath id="clip1_1248_157089">
+<path d="M64 82C64 79.7909 65.7909 78 68 78H220C222.209 78 224 79.7909 224 82V112C224 114.209 222.209 116 220 116H68C65.7909 116 64 114.209 64 112V82Z" fill="var(--sol-surface)"/>
+</clipPath>
+</defs>
+</svg>

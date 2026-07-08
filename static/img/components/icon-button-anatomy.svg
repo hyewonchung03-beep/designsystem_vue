@@ -1,0 +1,42 @@
+<svg width="900" height="256" viewBox="0 0 900 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+:root {
+  --sol-primary: #282363;
+  --sol-fill-active: #4d469a;
+  --sol-surface: #ffffff;
+  --sol-element-primary: #161616;
+  --sol-element-quaternary: #858585;
+  --sol-error-dim: #b84451;
+  --sol-static-white: #ffffff;
+  --sol-static-black: #000000;
+  --color-yellow-500: #d4ae00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sol-primary: #9791d4;
+    --sol-fill-active: #7b74c4;
+    --sol-surface: #161616;
+    --sol-element-primary: #ffffff;
+    --sol-element-quaternary: rgba(255, 255, 255, 0.5);
+    --sol-error-dim: #e76067;
+  }
+}
+</style>
+<g clip-path="url(#clip0_1666_175868)">
+<path d="M426 108C426 105.791 427.791 104 430 104H464C466.209 104 468 105.791 468 108V142C468 144.209 466.209 146 464 146H430C427.791 146 426 144.209 426 142V108Z" fill="var(--sol-primary)"/>
+<path d="M446.071 125.75H438.571V124.25H446.071V116.75H447.571V124.25H455.071V125.75H447.571V133.25H446.071V125.75Z" fill="var(--sol-surface)"/>
+</g>
+<path d="M446 139.5C446 139.224 446.224 139 446.5 139C446.776 139 447 139.224 447 139.5V169H446V139.5Z" fill="var(--sol-element-primary)"/>
+<rect x="432.5" y="169" width="28" height="28" rx="14" fill="var(--sol-element-primary)"/>
+<path d="M442.617 189V187.531L446.617 183.672C447.758 182.531 448.352 181.859 448.352 180.906C448.352 179.859 447.523 179.188 446.414 179.188C445.242 179.188 444.492 179.922 444.508 181.062H442.57C442.555 178.922 444.164 177.531 446.43 177.531C448.742 177.531 450.305 178.906 450.305 180.812C450.305 182.094 449.68 183.125 447.461 185.219L445.445 187.219V187.297H450.477V189H442.617Z" fill="var(--sol-surface)"/>
+<circle cx="446.5" cy="141" r="2" fill="var(--sol-element-primary)"/>
+<rect x="369.5" y="111" width="28" height="28" rx="14" fill="var(--sol-element-primary)"/>
+<path d="M385.359 119.688V131H383.312V121.672H383.25L380.609 123.359V121.5L383.406 119.688H385.359Z" fill="var(--sol-surface)"/>
+<path d="M397.5 124.5H435C435.276 124.5 435.5 124.724 435.5 125C435.5 125.276 435.276 125.5 435 125.5H397.5V124.5Z" fill="var(--sol-element-primary)"/>
+<circle cx="433.5" cy="125" r="2" fill="var(--sol-element-primary)"/>
+<defs>
+<clipPath id="clip0_1666_175868">
+<path d="M426 108C426 105.791 427.791 104 430 104H464C466.209 104 468 105.791 468 108V142C468 144.209 466.209 146 464 146H430C427.791 146 426 144.209 426 142V108Z" fill="var(--sol-surface)"/>
+</clipPath>
+</defs>
+</svg>

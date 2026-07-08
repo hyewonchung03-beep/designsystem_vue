@@ -1,0 +1,236 @@
+/* ── Light mode defaults ── */
+:root {
+  /* ── Primary / Secondary / Tertiary ── */
+  --sol-primary: var(--color-brand-700);
+  --sol-primary-inverse: var(--color-brand-300);
+  --sol-secondary: var(--color-common-white);
+  --sol-secondary-container: var(--color-brand-50);
+  --sol-tertiary: var(--color-brand-500);
+  --sol-tertiary-container: var(--color-brand-50);
+
+  /* ── Element ── */
+  --sol-element-brand: var(--color-brand-700);
+  --sol-element-brand-variant: var(--color-brand-600);
+  --sol-element-primary: var(--color-neutral-900);
+  --sol-element-secondary: var(--color-neutral-600);
+  --sol-element-tertiary: var(--color-neutral-500);
+  --sol-element-quaternary: var(--color-neutral-400);
+  --sol-element-inverse: var(--color-common-white);
+  --sol-element-inverse-variant: var(--color-alpha-white-80);
+  --sol-element-disabled: var(--color-alpha-black-24);
+  --sol-element-subtle: var(--color-alpha-black-36);
+
+  /* ── Text ── */
+  --sol-text-tertiary: var(--color-neutral-400);
+
+  /* ── Surface ── */
+  --sol-surface: var(--color-common-white);
+  --sol-surface-variant: var(--color-alpha-black-4);
+  --sol-surface-bright: var(--color-common-white);
+  --sol-surface-container: var(--color-common-white);
+  --sol-surface-container-low: var(--color-alpha-black-4);
+  --sol-surface-container-high: var(--color-common-white);
+  --sol-surface-container-highest: var(--color-common-white);
+  --sol-surface-base: var(--color-common-white);
+  --sol-surface-base-variant: var(--color-neutral-50);
+  --sol-surface-inverse: var(--color-alpha-black-80);
+  --sol-surface-inverse-surface: var(--color-alpha-black-80);
+
+  /* ── Border ── */
+  --sol-border-solid: var(--color-neutral-150);
+  --sol-border-solid-variant: var(--color-neutral-100);
+  --sol-border-normal: var(--color-alpha-black-16);
+  --sol-border-normal-variant: var(--color-alpha-black-8);
+  --sol-border-brand: var(--color-brand-300);
+  --sol-border-disabled: var(--color-alpha-black-4);
+
+  /* ── Fill ── */
+  --sol-fill-disabled: var(--color-alpha-black-8);
+  --sol-fill-inactive: var(--color-alpha-black-24);
+  --sol-fill-active: var(--color-brand-500);
+  --sol-fill-subtle: var(--color-alpha-black-16);
+
+  /* ── Scrim ── */
+  --sol-scrim: var(--color-alpha-black-50);
+
+  /* ── Error ── */
+  --sol-error: var(--color-red-500);
+  --sol-error-dim: var(--color-red-600);
+  --sol-error-variant: var(--color-red-200);
+  --sol-error-container: var(--color-red-100);
+
+  /* ── Extended: color / surface-outline / container / on-container ── */
+  --sol-orange:                  var(--color-orange-500);
+  --sol-orange-surface-outline:  var(--color-alpha-orange-24);
+  --sol-orange-container:        var(--color-orange-100);
+  --sol-orange-on-container:     var(--color-orange-500);
+
+  --sol-yellow:                  var(--color-yellow-500);
+  --sol-yellow-surface-outline:  var(--color-alpha-yellow-24);
+  --sol-yellow-container:        var(--color-yellow-100);
+  --sol-yellow-on-container:     var(--color-yellow-500);
+
+  --sol-green:                   var(--color-green-500);
+  --sol-green-surface-outline:   var(--color-alpha-green-24);
+  --sol-green-container:         var(--color-green-100);
+  --sol-green-on-container:      var(--color-green-500);
+
+  --sol-teal:                    var(--color-teal-500);
+  --sol-teal-surface-outline:    var(--color-alpha-teal-24);
+  --sol-teal-container:          var(--color-teal-100);
+  --sol-teal-on-container:       var(--color-teal-500);
+
+  --sol-light-blue:              var(--color-blue-500);
+  --sol-light-blue-surface-outline: var(--color-alpha-blue-24);
+  --sol-light-blue-container:    var(--color-blue-100);
+  --sol-light-blue-on-container: var(--color-blue-500);
+
+  --sol-indigo:                  var(--color-indigo-500);
+  --sol-indigo-surface-outline:  var(--color-alpha-indigo-24);
+  --sol-indigo-container:        var(--color-indigo-100);
+  --sol-indigo-on-container:     var(--color-indigo-500);
+
+  --sol-pink:                    var(--color-pink-500);
+  --sol-pink-surface-outline:    var(--color-alpha-pink-24);
+  --sol-pink-container:          var(--color-pink-100);
+  --sol-pink-on-container:       var(--color-pink-500);
+
+  --sol-purple:                  var(--color-purple-500);
+  --sol-purple-surface-outline:  var(--color-alpha-purple-24);
+  --sol-purple-container:        var(--color-purple-100);
+  --sol-purple-on-container:     var(--color-purple-500);
+
+  /* ── State: Selection ── */
+  --sol-selected-container: var(--color-brand-50);
+  --sol-selected-container-variant: var(--color-brand-25);
+
+  /* ── Interaction ── */
+  --sol-interaction-neutral-normal: var(--color-alpha-black-0);
+  --sol-interaction-neutral-hover: var(--color-alpha-black-8);
+  --sol-interaction-neutral-pressed: var(--color-alpha-black-12);
+  --sol-interaction-inverse-normal: var(--color-alpha-white-0);
+  --sol-interaction-inverse-hover: var(--color-alpha-white-8);
+  --sol-interaction-inverse-pressed: var(--color-alpha-white-12);
+
+  /* ── Static (테마 불변) ── */
+  --sol-static-white: var(--color-common-white);
+  --sol-static-black: var(--color-common-black);
+
+  /* ── Opacity ── */
+  --sol-opacity-completed: 0.6;
+}
+
+/* ── Dark mode overrides ── */
+[data-theme='dark'] {
+  /* ── Primary / Secondary / Tertiary ── */
+  --sol-primary: var(--color-brand-200);
+  --sol-primary-inverse: var(--color-brand-700);
+  --sol-secondary: var(--color-alpha-white-16);
+  --sol-secondary-container: var(--color-alpha-white-16);
+  --sol-tertiary: var(--color-brand-300);
+  --sol-tertiary-container: var(--color-alpha-white-16);
+
+  /* ── Element ── */
+  --sol-element-brand: var(--color-brand-200);
+  --sol-element-brand-variant: var(--color-common-white);
+  --sol-element-primary: var(--color-common-white);
+  --sol-element-secondary: var(--color-alpha-white-80);
+  --sol-element-tertiary: var(--color-alpha-white-60);
+  --sol-element-quaternary: var(--color-alpha-white-50);
+  --sol-element-inverse: var(--color-neutral-900);
+  --sol-element-inverse-variant: var(--color-alpha-black-50);
+  --sol-element-disabled: var(--color-alpha-white-24);
+  --sol-element-subtle: var(--color-alpha-white-36);
+
+  /* ── Text ── */
+  --sol-text-tertiary: var(--color-alpha-white-36);
+
+  /* ── Surface ── */
+  --sol-surface: var(--color-neutral-900);
+  --sol-surface-variant: var(--color-alpha-white-4);
+  --sol-surface-bright: var(--color-neutral-600);
+  --sol-surface-container: var(--color-neutral-800);
+  --sol-surface-container-low: var(--color-alpha-white-4);
+  --sol-surface-container-high: var(--color-neutral-700);
+  --sol-surface-container-highest: var(--color-neutral-600);
+  --sol-surface-base: var(--color-neutral-900);
+  --sol-surface-base-variant: var(--color-neutral-850);
+  --sol-surface-inverse: var(--color-alpha-white-80);
+  --sol-surface-inverse-surface: var(--color-alpha-white-80);
+
+  /* ── Border ── */
+  --sol-border-solid: var(--color-neutral-650);
+  --sol-border-solid-variant: var(--color-neutral-700);
+  --sol-border-normal: var(--color-alpha-white-16);
+  --sol-border-normal-variant: var(--color-alpha-white-8);
+  --sol-border-brand: var(--color-brand-300);
+  --sol-border-disabled: var(--color-alpha-white-50);
+
+  /* ── Fill ── */
+  --sol-fill-disabled: var(--color-alpha-white-8);
+  --sol-fill-inactive: var(--color-alpha-white-24);
+  --sol-fill-active: var(--color-brand-300);
+  --sol-fill-subtle: var(--color-alpha-white-16);
+
+  /* ── Scrim ── */
+  --sol-scrim: var(--color-alpha-black-36);
+
+  /* ── Error ── */
+  --sol-error: var(--color-red-400);
+  --sol-error-dim: var(--color-red-500);
+  --sol-error-variant: var(--color-alpha-red-36);
+  --sol-error-container: var(--color-alpha-red-24);
+
+  /* ── State: Selection ── */
+  --sol-selected-container: var(--color-alpha-black-16);
+  --sol-selected-container-variant: var(--color-alpha-black-8);
+
+  /* ── Interaction ── */
+  --sol-interaction-neutral-normal: var(--color-alpha-white-0);
+  --sol-interaction-neutral-hover: var(--color-alpha-white-8);
+  --sol-interaction-neutral-pressed: var(--color-alpha-white-12);
+  --sol-interaction-inverse-normal: var(--color-alpha-black-0);
+  --sol-interaction-inverse-hover: var(--color-alpha-black-8);
+  --sol-interaction-inverse-pressed: var(--color-alpha-black-12);
+
+  /* ── Extended: dark overrides (color / surface-outline / container / on-container) ── */
+  --sol-orange:                  var(--color-orange-400);
+  --sol-orange-surface-outline:  var(--color-alpha-orange-36);
+  --sol-orange-container:        var(--color-alpha-orange-24);
+  --sol-orange-on-container:     var(--color-orange-300);
+
+  --sol-yellow:                  var(--color-yellow-400);
+  --sol-yellow-surface-outline:  var(--color-alpha-yellow-36);
+  --sol-yellow-container:        var(--color-alpha-yellow-24);
+  --sol-yellow-on-container:     var(--color-yellow-300);
+
+  --sol-green:                   var(--color-green-400);
+  --sol-green-surface-outline:   var(--color-alpha-green-36);
+  --sol-green-container:         var(--color-alpha-green-24);
+  --sol-green-on-container:      var(--color-green-300);
+
+  --sol-teal:                    var(--color-teal-400);
+  --sol-teal-surface-outline:    var(--color-alpha-teal-36);
+  --sol-teal-container:          var(--color-alpha-teal-24);
+  --sol-teal-on-container:       var(--color-teal-300);
+
+  --sol-light-blue:              var(--color-blue-400);
+  --sol-light-blue-surface-outline: var(--color-alpha-blue-36);
+  --sol-light-blue-container:    var(--color-alpha-blue-24);
+  --sol-light-blue-on-container: var(--color-blue-300);
+
+  --sol-indigo:                  var(--color-indigo-400);
+  --sol-indigo-surface-outline:  var(--color-alpha-indigo-36);
+  --sol-indigo-container:        var(--color-alpha-indigo-24);
+  --sol-indigo-on-container:     var(--color-indigo-300);
+
+  --sol-pink:                    var(--color-pink-400);
+  --sol-pink-surface-outline:    var(--color-alpha-pink-36);
+  --sol-pink-container:          var(--color-alpha-pink-24);
+  --sol-pink-on-container:       var(--color-pink-300);
+
+  --sol-purple:                  var(--color-purple-400);
+  --sol-purple-surface-outline:  var(--color-alpha-purple-36);
+  --sol-purple-container:        var(--color-alpha-purple-24);
+  --sol-purple-on-container:     var(--color-purple-300);
+}

@@ -1,0 +1,94 @@
+<svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+:root {
+  --sol-primary: #282363;
+  --sol-element-brand-variant: #3a3480;
+  --sol-fill-active: #4d469a;
+  --sol-selected-container-variant: #f5f4fd;
+  --sol-surface: #ffffff;
+  --sol-surface-base-variant: #f5f5f5;
+  --sol-secondary-container: #e8e6f8;
+  --sol-element-primary: #161616;
+  --sol-element-secondary: #484848;
+  --sol-element-tertiary: #636363;
+  --sol-element-quaternary: #858585;
+  --sol-border-brand: #7b74c4;
+  --sol-border-normal-variant: rgba(0, 0, 0, 0.08);
+  --sol-border-solid-variant: #e0e0e0;
+  --sol-border-solid: #d0d0d0;
+  --sol-error: #e76067;
+  --sol-error-container: #fdeaeb;
+  --sol-static-white: #ffffff;
+  --sol-static-black: #000000;
+  --color-brand-400: #6058b4;
+  --color-teal-500: #05a09a;
+  --color-green-500: #35a142;
+  --color-yellow-500: #d4ae00;
+  --color-orange-500: #e06418;
+  --color-blue-500: #3e9bca;
+  --color-indigo-500: #3d5ed6;
+  --color-pink-500: #d03e94;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sol-primary: #9791d4;
+    --sol-element-brand-variant: #ffffff;
+    --sol-fill-active: #7b74c4;
+    --sol-selected-container-variant: rgba(0, 0, 0, 0.08);
+    --sol-surface: #161616;
+    --sol-surface-base-variant: #1c1c1c;
+    --sol-secondary-container: rgba(255, 255, 255, 0.16);
+    --sol-element-primary: #ffffff;
+    --sol-element-secondary: rgba(255, 255, 255, 0.8);
+    --sol-element-tertiary: rgba(255, 255, 255, 0.6);
+    --sol-element-quaternary: rgba(255, 255, 255, 0.5);
+    --sol-border-brand: #7b74c4;
+    --sol-border-normal-variant: rgba(255, 255, 255, 0.08);
+    --sol-border-solid-variant: #3d3d3d;
+    --sol-border-solid: #333333;
+    --sol-error: #ee7a80;
+    --sol-error-container: rgba(231, 96, 103, 0.24);
+    --sol-static-white: #ffffff;
+    --sol-static-black: #000000;
+  }
+}
+</style>
+<g clip-path="url(#clip0_1254_163098)">
+<rect width="288" height="192" fill="var(--sol-surface-base-variant)"/>
+<rect x="24" y="43" width="240" height="0.792752" fill="var(--sol-border-solid-variant)"/>
+<rect x="24" y="69.5527" width="240" height="0.792752" fill="var(--sol-border-solid-variant)"/>
+<rect x="24" y="96.1035" width="240" height="0.792752" fill="var(--sol-border-solid-variant)"/>
+<rect x="24" y="122.656" width="240" height="0.792752" fill="var(--sol-border-solid-variant)"/>
+<rect x="24" y="149.207" width="240" height="0.792752" fill="var(--sol-border-solid-variant)"/>
+<path d="M49 132L88 125" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="88.0004" cy="125" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 86.1973 126.803)" fill="var(--sol-surface)"/>
+<circle cx="49.0004" cy="132" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 47.1973 133.803)" fill="var(--sol-surface)"/>
+<path d="M88 124.562L125 130.562" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="125" cy="130.561" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 123.197 132.363)" fill="var(--sol-surface)"/>
+<circle cx="88.0004" cy="124.561" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 86.1973 126.363)" fill="var(--sol-surface)"/>
+<path d="M125 131L164 85" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="164" cy="85" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 162.197 86.8027)" fill="var(--sol-surface)"/>
+<circle cx="125" cy="131" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 123.197 132.803)" fill="var(--sol-surface)"/>
+<path d="M164 85.002L201 107.002" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="201" cy="107" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 199.197 108.803)" fill="var(--sol-surface)"/>
+<circle cx="164" cy="85" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 162.197 86.8027)" fill="var(--sol-surface)"/>
+<path d="M201 107L240 79" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="240" cy="79" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 238.197 80.8027)" fill="var(--sol-surface)"/>
+<circle cx="201" cy="107" r="2.34384" stroke="var(--color-brand-400)" stroke-width="1.08177"/>
+<circle cx="1.80295" cy="1.80295" r="1.80295" transform="matrix(1 0 0 -1 199.197 108.803)" fill="var(--sol-surface)"/>
+</g>
+<defs>
+<clipPath id="clip0_1254_163098">
+<rect width="288" height="192" fill="var(--sol-surface)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,21 @@
+# Source maps
+dist/**/*.map
+
+# Docusaurus page components
+dist/components/*GuidelineContent.d.ts
+dist/components/*Content.d.ts
+dist/components/*Examples.d.ts
+dist/components/Doc*.d.ts
+dist/components/ExampleCard.d.ts
+dist/components/GenericGuidelineContent.d.ts
+dist/components/ComponentGuidelinePrimitives.d.ts
+dist/components/ComponentsOverviewContent.d.ts
+dist/components/ComponentsPreview.d.ts
+dist/components/HomepageFeatures/
+
+# Storybook internals
+dist/components/story*.d.ts
+dist/components/Storybook*.d.ts
+
+# Figma token JSON (internal tooling)
+dist/styles/figma-tokens.json

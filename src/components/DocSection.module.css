@@ -1,0 +1,51 @@
+.section {
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sectionHeader {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+  line-height: 1.3;
+}
+
+.sectionSubtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+
+  .sectionContent {
+    gap: 16px;
+  }
+}

@@ -1,106 +1,141 @@
-/**
- * Design tokens from Figma: Component (Shared)
- * https://www.figma.com/design/YqKny45xSmjr76WGIXeL7P/Component--Shared-
- */
+/* ============================================================
+   SOLUM Design System — Foundation Tokens
+
+   Single source of truth for all design tokens.
+   Imported by both Docusaurus (custom.css) and Storybook (preview).
+
+   Color token files:
+     primitive/color.css  — --color-* raw hex values
+     primitive/alpha.css  — --color-alpha-* rgba values
+     semantic/color.css   — --sol-* semantic roles (light + dark)
+   ============================================================ */
+
+@import './tokens/primitive/color.css';
+@import './tokens/primitive/alpha.css';
+@import './tokens/primitive/spacing.css';
+@import './tokens/primitive/icon-size.css';
+@import './tokens/semantic/color.css';
+
 :root {
-  /* Brand */
-  --color-primary: #282363;
-  --color-primary-hover: #3a3480;
-  --color-fill-active: #4d469a;
-  --color-brand-extended: #6058b4;
-  --color-light-blue-extended: #3e9bca;
+  /* ── Typography ── */
+  --sol-font-family: 'Pretendard', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --sol-font-weight-regular: 400;
+  --sol-font-weight-semibold: 600;
 
-  /* Element */
-  --color-element-primary: #161616;
-  --color-element-inverse: #ffffff;
-  --color-element-tertiary: #636363;
-  --color-element-quaternary: #858585;
-  --color-element-brand-variant: #3a3480;
+  /* Font Size */
+  --sol-font-size-display-lg: 56px;
+  --sol-font-size-display-md: 48px;
+  --sol-font-size-display-sm: 44px;
+  --sol-font-size-headline-xl: 36px;
+  --sol-font-size-headline-lg: 32px;
+  --sol-font-size-headline-md: 28px;
+  --sol-font-size-headline-sm: 24px;
+  --sol-font-size-text-xl: 20px;
+  --sol-font-size-text-lg: 18px;
+  --sol-font-size-text-md: 16px;
+  --sol-font-size-text-sm: 14px;
+  --sol-font-size-text-xs: 12px;
+  --sol-font-size-text-xxs: 11px;
 
-  /* Surface */
-  --color-surface-container: #ffffff;
-  --color-surface-subtle: #f5f5f5;
+  /* Line Height */
+  --sol-line-height-display-lg: 60px;
+  --sol-line-height-display-md: 52px;
+  --sol-line-height-display-sm: 48px;
+  --sol-line-height-headline-xl: 40px;
+  --sol-line-height-headline-lg: 36px;
+  --sol-line-height-headline-md: 32px;
+  --sol-line-height-headline-sm: 28px;
+  --sol-line-height-text-xl: 26px;
+  --sol-line-height-text-lg: 24px;
+  --sol-line-height-text-md: 22px;
+  --sol-line-height-text-sm: 20px;
+  --sol-line-height-text-xs: 14px;
+  --sol-line-height-text-xs-2line: 16px;
+  --sol-line-height-text-xxs: 13px;
+  --sol-line-height-text-md-compact: 20px;
+  --sol-line-height-text-sm-compact: 16px;
 
-  /* Border */
-  --color-border-normal: rgba(0, 0, 0, 0.16);
-  --color-border-solid: #e0e0e0;
+  /* ── Spacing: Gap ── */
+  --sol-gap-2: 2px;
+  --sol-gap-4: 4px;
+  --sol-gap-6: 6px;
+  --sol-gap-8: 8px;
+  --sol-gap-10: 10px;
+  --sol-gap-12: 12px;
+  --sol-gap-16: 16px;
+  --sol-gap-20: 20px;
+  --sol-gap-24: 24px;
+  --sol-gap-30: 30px;
+  --sol-gap-36: 36px;
+  --sol-gap-48: 48px;
+  --sol-gap-56: 56px;
+  --sol-gap-60: 60px;
 
-  /* Semantic */
-  --color-error: #e76067;
-  --color-error-variant: #f9c8ca;
-  --color-success: #2d9d78;
-  --color-success-variant: #c8f0e3;
-  --color-warning: #f5a623;
-  --color-warning-variant: #fde8c3;
-  --color-info: #3e9bca;
-  --color-info-variant: #d4ecf7;
+  /* ── Spacing: Padding ── */
+  --sol-padding-2: 2px;
+  --sol-padding-4: 4px;
+  --sol-padding-6: 6px;
+  --sol-padding-8: 8px;
+  --sol-padding-10: 10px;
+  --sol-padding-12: 12px;
+  --sol-padding-14: 14px;
+  --sol-padding-16: 16px;
+  --sol-padding-18: 18px;
+  --sol-padding-20: 20px;
+  --sol-padding-24: 24px;
+  --sol-padding-30: 30px;
+  --sol-padding-36: 36px;
+  --sol-padding-42: 42px;
+  --sol-padding-48: 48px;
+  --sol-padding-60: 60px;
 
-  /* Badge options */
-  --color-badge-red: #e76067;
-  --color-badge-red-bg: #f9c8ca;
-  --color-badge-orange: #f08c3a;
-  --color-badge-orange-bg: #fde0c8;
-  --color-badge-yellow: #e6b800;
-  --color-badge-yellow-bg: #fff3c4;
-  --color-badge-green: #2d9d78;
-  --color-badge-green-bg: #c8f0e3;
-  --color-badge-teal: #1a9b8f;
-  --color-badge-teal-bg: #c8f0ec;
-  --color-badge-light-blue: #3e9bca;
-  --color-badge-light-blue-bg: #d4ecf7;
-  --color-badge-indigo: #4d469a;
-  --color-badge-indigo-bg: #d8d6f0;
-  --color-badge-pink: #e05c8a;
-  --color-badge-pink-bg: #fad4e2;
-  --color-badge-purple: #8b5cf6;
-  --color-badge-purple-bg: #ede5ff;
-  --color-badge-neutral: #636363;
-  --color-badge-neutral-bg: #e8e8e8;
+  /* ── Radius ── */
+  --sol-radius-1: 1px;
+  --sol-radius-2: 2px;
+  --sol-radius-4: 4px;
+  --sol-radius-6: 6px;
+  --sol-radius-8: 8px;
+  --sol-radius-12: 12px;
+  --sol-radius-circle: 10000px;
 
-  /* Secondary button */
-  --color-secondary-bg: #ffffff;
-  --color-secondary-border: rgba(0, 0, 0, 0.16);
-  --color-secondary-text: #282363;
+  /* ── Border Width ── */
+  --sol-border-width-thin: 1px;
+  --sol-border-width-medium: 1.5px;
+  --sol-border-width-thick: 2px;
+  --sol-border-width-indicator: 3px;
 
-  /* Tertiary */
-  --color-tertiary-bg: #f0eff8;
-  --color-tertiary-text: #282363;
+  /* ── Shadow ── */
+  --sol-shadow-extralight: 0 2px 2px var(--color-alpha-black-4);
+  --sol-shadow-light: 0 2px 6px var(--color-alpha-black-8), 0 0 1px var(--color-alpha-black-4);
+  --sol-shadow-normal: 0 4px 8px var(--color-alpha-black-8), 0 0 1px var(--color-alpha-black-8);
+  --sol-shadow-emphasize: 0 6px 12px var(--color-alpha-black-8), 0 2px 8px var(--color-alpha-black-8);
+  --sol-shadow-strong: 0 6px 16px var(--color-alpha-black-12), 0 4px 8px var(--color-alpha-black-8);
+  --sol-shadow-heavy: 0 16px 30px var(--color-alpha-black-12), 0 4px 8px var(--color-alpha-black-8);
+  --sol-shadow-focus-button-outer: 0 0 0 4px var(--sol-element-brand);
+  --sol-shadow-focus-button-inner: 0 0 0 2px var(--color-common-white);
+  --sol-shadow-focus-button-ring: 0 0 0 2px var(--color-common-white), 0 0 0 4px var(--sol-element-brand);
 
-  /* Danger */
-  --color-danger: #d32f2f;
-  --color-danger-hover: #b71c1c;
+  /* ── Focus Ring ── */
+  --sol-focus-ring-link-outline-color: var(--sol-element-brand);
+  --sol-focus-ring-link-outline-width: 2px;
+  --sol-focus-ring-link-radius: 3px;
 
-  /* Typography */
-  --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-md: 16px;
-  --font-size-lg: 18px;
-  --line-height-xs: 14px;
-  --line-height-sm: 20px;
-  --line-height-md: 24px;
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
+  /* ── Layout ── */
+  --sol-content-width: 900px;
+  --sol-sidebar-width: 240px;
+  --sol-toc-width: 240px;
+  --sol-navbar-height: 60px;
+  --sol-content-padding-top: 60px;
+}
 
-  /* Spacing */
-  --gap-2: 2px;
-  --gap-4: 4px;
-  --gap-6: 6px;
-  --gap-8: 8px;
-  --gap-16: 16px;
-  --padding-2: 2px;
-  --padding-8: 8px;
-  --padding-12: 12px;
-
-  /* Radius */
-  --radius-2: 2px;
-  --radius-4: 4px;
-  --radius-circle: 10000px;
-
-  /* Interaction */
-  --interaction-neutral: rgba(0, 0, 0, 0);
-  --interaction-overlay: rgba(0, 0, 0, 0.08);
-
-  /* Focus */
-  --focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #4d469a;
+[data-theme='dark'] {
+  /* ── Shadow (stronger alpha in dark) ── */
+  --sol-shadow-extralight: 0 2px 2px rgba(0, 0, 0, 0.3);
+  --sol-shadow-light: 0 0 1px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.4);
+  --sol-shadow-normal: 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.4);
+  --sol-shadow-emphasize: 0 2px 8px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.4);
+  --sol-shadow-strong: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 16px rgba(0, 0, 0, 0.5);
+  --sol-shadow-heavy: 0 4px 8px rgba(0, 0, 0, 0.3), 0 16px 30px rgba(0, 0, 0, 0.5);
+  --sol-shadow-focus-button-ring: 0 0 0 2px var(--color-neutral-900), 0 0 0 4px var(--color-brand-300);
+  --sol-focus-ring-link-outline-color: var(--color-brand-300);
 }

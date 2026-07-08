@@ -1,0 +1,71 @@
+<svg width="288" height="192" viewBox="0 0 288 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+:root {
+  --sol-primary: #282363;
+  --sol-element-brand-variant: #3a3480;
+  --sol-fill-active: #4d469a;
+  --sol-selected-container-variant: #f5f4fd;
+  --sol-surface: #ffffff;
+  --sol-surface-base-variant: #f5f5f5;
+  --sol-secondary-container: #e8e6f8;
+  --sol-element-primary: #161616;
+  --sol-element-secondary: #484848;
+  --sol-element-tertiary: #636363;
+  --sol-element-quaternary: #858585;
+  --sol-border-brand: #7b74c4;
+  --sol-border-normal-variant: rgba(0, 0, 0, 0.08);
+  --sol-border-solid-variant: #e0e0e0;
+  --sol-border-solid: #d0d0d0;
+  --sol-error: #e76067;
+  --sol-error-container: #fdeaeb;
+  --sol-static-white: #ffffff;
+  --sol-static-black: #000000;
+  --color-brand-400: #6058b4;
+  --color-teal-500: #05a09a;
+  --color-green-500: #35a142;
+  --color-yellow-500: #d4ae00;
+  --color-orange-500: #e06418;
+  --color-blue-500: #3e9bca;
+  --color-indigo-500: #3d5ed6;
+  --color-pink-500: #d03e94;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sol-primary: #9791d4;
+    --sol-element-brand-variant: #ffffff;
+    --sol-fill-active: #7b74c4;
+    --sol-selected-container-variant: rgba(0, 0, 0, 0.08);
+    --sol-surface: #161616;
+    --sol-surface-base-variant: #1c1c1c;
+    --sol-secondary-container: rgba(255, 255, 255, 0.16);
+    --sol-element-primary: #ffffff;
+    --sol-element-secondary: rgba(255, 255, 255, 0.8);
+    --sol-element-tertiary: rgba(255, 255, 255, 0.6);
+    --sol-element-quaternary: rgba(255, 255, 255, 0.5);
+    --sol-border-brand: #7b74c4;
+    --sol-border-normal-variant: rgba(255, 255, 255, 0.08);
+    --sol-border-solid-variant: #3d3d3d;
+    --sol-border-solid: #333333;
+    --sol-error: #ee7a80;
+    --sol-error-container: rgba(231, 96, 103, 0.24);
+    --sol-static-white: #ffffff;
+    --sol-static-black: #000000;
+  }
+}
+</style>
+<g clip-path="url(#clip0_1254_164196)">
+<rect y="140" width="302" height="52" fill="url(#paint0_linear_1254_164196)"/>
+<path d="M148.556 107V109H139.444V107H148.556ZM144 83C149.599 83 153.937 88.086 153.943 94.0977L153.975 97.1029V97.1133L153.983 97.4518C154.059 99.1294 154.691 100.537 155.355 101.526L155.484 101.751C155.74 102.288 155.696 102.884 155.535 103.324C155.36 103.802 154.875 104.5 153.99 104.5H134.01C133.125 104.5 132.639 103.802 132.465 103.324C132.281 102.821 132.249 102.114 132.644 101.526L132.906 101.108C133.51 100.084 134.025 98.7119 134.025 97.1133V97.1029L134.057 94.0977C134.062 88.086 138.4 83 144 83ZM144 85C139.725 85 136.057 88.9591 136.057 94.1081V94.1198L136.025 97.1237C136.022 99.3578 135.228 101.212 134.393 102.5H153.607C152.771 101.212 151.978 99.3578 151.975 97.1237L151.943 94.1198V94.1081L151.932 93.6289C151.713 88.7155 148.141 85 144 85Z" fill="var(--sol-element-quaternary)"/>
+<rect x="143.5" y="70.5" width="33" height="19" rx="9.5" fill="var(--sol-error)"/>
+<path d="M153.125 75.6152C154.468 75.626 155.95 76.4316 155.95 79.2998C155.95 82.0605 154.822 83.6074 152.996 83.6074C151.632 83.6074 150.665 82.7695 150.472 81.5342H151.428C151.6 82.2324 152.126 82.748 152.996 82.748C154.264 82.748 155.037 81.6523 155.048 79.7617H154.94C154.489 80.4062 153.78 80.793 152.953 80.793C151.557 80.793 150.407 79.7295 150.407 78.2256C150.407 76.7754 151.471 75.6045 153.125 75.6152ZM153.125 76.4639C152.104 76.4639 151.342 77.2588 151.353 78.2148C151.353 79.1816 152.072 79.9443 153.093 79.9443C154.103 79.9443 154.897 79.1064 154.897 78.1934C154.897 77.3018 154.156 76.4639 153.125 76.4639ZM159.871 75.6152C161.214 75.626 162.696 76.4316 162.696 79.2998C162.696 82.0605 161.568 83.6074 159.742 83.6074C158.378 83.6074 157.411 82.7695 157.218 81.5342H158.174C158.346 82.2324 158.872 82.748 159.742 82.748C161.01 82.748 161.783 81.6523 161.794 79.7617H161.687C161.235 80.4062 160.526 80.793 159.699 80.793C158.303 80.793 157.153 79.7295 157.153 78.2256C157.153 76.7754 158.217 75.6045 159.871 75.6152ZM159.871 76.4639C158.851 76.4639 158.088 77.2588 158.099 78.2148C158.099 79.1816 158.818 79.9443 159.839 79.9443C160.849 79.9443 161.644 79.1064 161.644 78.1934C161.644 77.3018 160.902 76.4639 159.871 76.4639ZM166.306 82.1357V80.0518H164.232V79.1816H166.306V77.1084H167.176V79.1816H169.26V80.0518H167.176V82.1357H166.306Z" fill="var(--sol-surface)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1254_164196" x1="259.531" y1="192" x2="259.531" y2="140" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0.04"/>
+<stop offset="1" stop-color="var(--sol-surface)" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_1254_164196">
+<rect width="288" height="192" fill="var(--sol-surface)"/>
+</clipPath>
+</defs>
+</svg>

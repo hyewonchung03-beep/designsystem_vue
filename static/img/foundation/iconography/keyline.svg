@@ -1,0 +1,11 @@
+<svg width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 200.707 200.709" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Keyline">
+<rect id="square" x="25.2129" y="25.2207" width="150.276" height="150.276" rx="14.4444" stroke="var(--stroke-0, black)" stroke-opacity="0.08"/>
+<rect id="circle" x="16.8653" y="16.8653" width="166.974" height="166.974" rx="83.4868" stroke="var(--stroke-0, black)" stroke-opacity="0.08"/>
+<rect id="inner circle" x="58.6075" y="58.6114" width="83.4868" height="83.4868" rx="41.7434" stroke="var(--stroke-0, black)" stroke-opacity="0.08"/>
+<rect id="landscape rectangle" x="16.8653" y="33.5684" width="166.974" height="133.579" rx="14.4444" stroke="var(--stroke-0, black)" stroke-opacity="0.08"/>
+<rect id="portrait rectangle" x="33.5606" y="183.838" width="166.974" height="133.579" rx="14.4444" transform="rotate(-90 33.5606 183.838)" stroke="var(--stroke-0, black)" stroke-opacity="0.08"/>
+<path id="diagonal" d="M200.176 0.533241L0.353553 200.355" stroke="var(--stroke-0, black)" stroke-opacity="0.08"/>
+<path id="diagonal_2" d="M0.354018 0.353553L200.354 200.353" stroke="var(--stroke-0, black)" stroke-opacity="0.08"/>
+</g>
+</svg>
