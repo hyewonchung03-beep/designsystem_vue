@@ -236,6 +236,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
 
         {helperText && (
           <TextHelper
+            id={`${textareaId}-helper`}
             helperText={helperText}
             type={state === 'error' ? 'error' : 'enabled'}
           />

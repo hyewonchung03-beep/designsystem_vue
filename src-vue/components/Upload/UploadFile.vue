@@ -1,0 +1,46 @@
+<script lang="ts">
+export type UploadFileProps = {
+  fileName?: string;
+  showIcon?: boolean;
+  class?: string;
+};
+</script>
+
+<script setup lang="ts">
+const props = withDefaults(defineProps<UploadFileProps>(), {
+  fileName: 'title.pdf',
+  showIcon: true,
+  class: '',
+});
+</script>
+
+<template>
+  <div
+    :class="['inline-flex items-center bg-tertiary rounded-circle text-left', props.class]"
+    style="padding: var(--sol-spacing-4) var(--sol-spacing-8); gap: var(--sol-spacing-2)"
+  >
+    <span
+      v-if="showIcon"
+      class="shrink-0 text-static-white"
+      style="display: block; width: 12px; height: 12px"
+      aria-hidden="true"
+    >
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+          d="M4.25879 18.75V5.25C4.2588 3.59318 5.60198 2.25005 7.25879 2.25H15.8838V2.25684C16.3663 2.28824 16.8138 2.50179 17.1416 2.84668C17.465 3.18692 17.9682 3.70115 18.4463 4.12891L18.793 4.45117C19.1645 4.80902 19.5898 5.24659 19.8643 5.53125C20.1838 5.86267 20.3633 6.2975 20.3809 6.75H20.3838V18.75C20.3837 20.4068 19.0406 21.75 17.3838 21.75H7.25879C5.60195 21.75 4.25881 20.4068 4.25879 18.75ZM15.8838 6.375C15.8838 6.58199 16.0518 6.74981 16.2588 6.75H18.876C18.8625 6.6821 18.8315 6.62042 18.7852 6.57227C18.4127 6.18591 17.8146 5.57564 17.4463 5.24609C16.9231 4.77795 16.3872 4.22974 16.0547 3.87988C16.0053 3.82793 15.946 3.79232 15.8838 3.77148V6.375ZM5.75879 18.75C5.75881 19.5784 6.43038 20.25 7.25879 20.25H17.3838C18.2122 20.25 18.8838 19.5784 18.8838 18.75V8.25H16.2588C15.2234 8.24981 14.3838 7.41042 14.3838 6.375V3.75H7.25879C6.43041 3.75005 5.75879 4.4216 5.75879 5.25V18.75Z"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
+    <span
+      class="whitespace-nowrap text-static-white"
+      style="
+        font-size: var(--sol-font-size-text-xs);
+        line-height: var(--sol-line-height-text-xs);
+        font-weight: var(--sol-font-weight-regular);
+      "
+    >
+      {{ fileName }}
+    </span>
+  </div>
+</template>

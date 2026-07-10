@@ -1,0 +1,18 @@
+/* Vue pilot preview entry: full Tailwind (preflight + theme + utilities) */
+@import "tailwindcss";
+@import "../src/styles/tokens.css";
+@import "../src/styles/tailwind-theme.css";
+
+@source "./components";
+@source ".";
+
+html, body {
+  font-family: var(--sol-font-family);
+  background-color: var(--sol-surface);
+  color: var(--sol-element-primary);
+}
+
+.text-text-sm  { font-size: var(--sol-font-size-text-sm); }
+.text-text-md  { font-size: var(--sol-font-size-text-md); }
+.leading-text-sm { line-height: var(--sol-line-height-text-sm); }
+.leading-text-md { line-height: var(--sol-line-height-text-md); }

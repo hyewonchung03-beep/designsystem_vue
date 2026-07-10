@@ -989,24 +989,28 @@ export function DatePickerRange({
     const base = startDate ?? today;
     return [base.getFullYear(), base.getMonth()] as [number, number];
   })();
-  const [leftYear,  setLeftYear]  = useState(initLeft[0]);
-  const [leftMonth, setLeftMonth] = useState(
-    Math.max(0, initLeft[1] > 0 ? initLeft[1] - 1 : 0),
-  );
+  const initLeftShifted = shiftMonth(initLeft[0], initLeft[1], -1);
+  const [leftYear,  setLeftYear]  = useState(initLeftShifted[0]);
+  const [leftMonth, setLeftMonth] = useState(initLeftShifted[1]);
   const [rightYear, rightMonth] = shiftMonth(leftYear, leftMonth, 1);
 
   function handleDayClick(date: Date) {
+    let newStart = rangeStart;
+    let newEnd = rangeEnd;
     if (!rangeStart || (rangeStart && rangeEnd)) {
+      newStart = date; newEnd = null;
       setRangeStart(date); setRangeEnd(null); setQuickOpt('custom');
     } else {
       if (date.getTime() < rangeStart.getTime()) {
+        newEnd = rangeStart; newStart = date;
         setRangeEnd(rangeStart); setRangeStart(date);
       } else {
+        newEnd = date;
         setRangeEnd(date);
       }
       setQuickOpt('custom');
     }
-    onChange?.(rangeStart, rangeEnd);
+    onChange?.(newStart, newEnd);
   }
 
   function handleQuickSelect(key: QuickOption) {

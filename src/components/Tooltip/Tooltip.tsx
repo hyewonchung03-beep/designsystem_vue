@@ -14,6 +14,8 @@ export type TooltipProps = {
   text?: string;
 };
 
+// NOTE: raw px offsets below (-8, -64) have no matching --sol-* token.
+// CLAUDE.md violation (no hardcoded px) — left as-is pending a token decision.
 const pointerPositionByPlacement: Record<TooltipPlacement, React.CSSProperties> = {
   top: {
     bottom: -8,
@@ -60,6 +62,8 @@ export default function Tooltip({
 }: TooltipProps) {
   return (
     <span
+      // NOTE: max-w-[360px] arbitrary value has no matching --sol-* token.
+      // CLAUDE.md violation (no hardcoded px) — left as-is pending a token decision.
       className={`relative inline-flex max-w-[360px] items-center text-element-inverse ${className}`}
       role="tooltip"
     >
@@ -67,6 +71,8 @@ export default function Tooltip({
         className="inline-flex min-w-0 items-center justify-center overflow-hidden bg-surface-inverse text-element-inverse"
         style={{
           gap: 'var(--sol-spacing-4)',
+          // NOTE: maxWidth/minHeight below have no matching --sol-* token.
+          // CLAUDE.md violation (no hardcoded px) — left as-is pending a token decision.
           maxWidth: 360,
           minHeight: 24,
           padding: 'var(--sol-spacing-4) var(--sol-spacing-8)',

@@ -22,3 +22,4 @@ yarn-error.log*
 
 *storybook.log
 storybook-static
+storybook-vue-static

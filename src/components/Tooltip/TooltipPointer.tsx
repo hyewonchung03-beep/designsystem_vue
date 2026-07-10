@@ -90,6 +90,8 @@ export function TooltipPointer({
   return (
     <div
       className={`flex flex-col justify-center ${alignClass} ${className}`}
+      // NOTE: width: 120 has no matching --sol-* token.
+      // CLAUDE.md violation (no hardcoded px) — left as-is pending a token decision.
       style={{ paddingLeft: 'var(--sol-spacing-6)', paddingRight: 'var(--sol-spacing-6)', width: 120 }}
     >
       {size === 'sm' ? (

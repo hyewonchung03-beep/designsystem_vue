@@ -5,10 +5,14 @@ export type TooltipInfoProps = {
 
 export default function TooltipInfo({ className = '', text = 'text' }: TooltipInfoProps) {
   return (
+    // NOTE: max-w-[360px] arbitrary value has no matching --sol-* token.
+    // CLAUDE.md violation (no hardcoded px) — left as-is pending a token decision.
     <span className={`inline-flex max-w-[360px] flex-col items-start justify-end ${className}`} role="tooltip">
       <span
         className="inline-flex min-w-0 items-center justify-center overflow-hidden"
         style={{
+          // NOTE: maxWidth/minHeight below have no matching --sol-* token.
+          // CLAUDE.md violation (no hardcoded px) — left as-is pending a token decision.
           maxWidth: 360,
           minHeight: 18,
           padding: 'var(--sol-spacing-2) var(--sol-spacing-6)',

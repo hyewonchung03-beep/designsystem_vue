@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "vue-pilot",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:vue"],
+      "port": 5173
+    }
+  ]
+}
