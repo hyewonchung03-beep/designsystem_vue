@@ -33,20 +33,26 @@ export const globalTypes = {
 
 const preview: Preview = {
   decorators: [
-    (story, context) => ({
-      setup() {
-        const theme = (context.globals?.theme as string) ?? 'light';
-        applyTheme(theme);
+    (story, context) => {
+      // Vue의 setup()은 컴포넌트 인스턴스당 한 번만 실행되므로, 그 안에서
+      // theme을 읽으면 툴바로 globals가 바뀌어도(리마운트 없이 patch되는 경우)
+      // 반영되지 않는다. 데코레이터 함수 본문은 globals가 바뀔 때마다 Storybook이
+      // 다시 호출해주므로, 여기서 매번 직접 적용해야 실시간 토글이 동작한다.
+      const theme = (context.globals?.theme as string) ?? 'light';
+      applyTheme(theme);
 
-        if (theme === 'system') {
-          const mq = window.matchMedia('(prefers-color-scheme: dark)');
-          const handler = () => applyTheme('system');
-          mq.addEventListener('change', handler);
-          onUnmounted(() => mq.removeEventListener('change', handler));
-        }
-      },
-      template: '<story />',
-    }),
+      return {
+        setup() {
+          if (theme === 'system') {
+            const mq = window.matchMedia('(prefers-color-scheme: dark)');
+            const handler = () => applyTheme('system');
+            mq.addEventListener('change', handler);
+            onUnmounted(() => mq.removeEventListener('change', handler));
+          }
+        },
+        template: '<story />',
+      };
+    },
   ],
   parameters: {
     // 'centered'는 스토리를 콘텐츠 크기로 shrink-wrap하는 flex 박스로 감싸서,
