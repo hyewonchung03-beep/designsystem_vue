@@ -87,6 +87,24 @@
   border-color: var(--sol-border-solid) !important;
 }
 
+/* Boolean prop용 True/False 토글(label > input[role=switch] + span + span) —
+   트랙은 연한 하늘색, 비활성 쪽 글자는 반투명 검정이라 다크에서 거의 안 보인다.
+   클래스가 랜덤 emotion 해시라 role/구조로 특정한다. */
+[data-theme='dark'] .docblock-argstable label:has(> input[role='switch']) {
+  background-color: var(--sol-surface-container) !important;
+}
+
+[data-theme='dark'] .docblock-argstable label:has(> input[role='switch']) span {
+  background-color: transparent !important;
+  color: var(--sol-element-tertiary) !important;
+}
+
+[data-theme='dark'] .docblock-argstable label:has(> input[role='switch']) input:checked ~ span:last-of-type,
+[data-theme='dark'] .docblock-argstable label:has(> input[role='switch']) input:not(:checked) ~ span:first-of-type {
+  background-color: var(--sol-surface-container-high) !important;
+  color: var(--sol-element-primary) !important;
+}
+
 /* 주의: `sb-unstyled`은 코드블록 전용이 아니라 title(h1)에도 똑같이 붙는
    범용 클래스라, 이 셀렉터로 잡으면 타이틀 뒤에도 똑같이 배경이 깔린다.
    반드시 pre/code 태그로 좁혀서 지정해야 한다. */
