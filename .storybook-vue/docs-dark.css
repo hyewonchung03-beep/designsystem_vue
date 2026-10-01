@@ -8,18 +8,20 @@
   color: var(--sol-element-primary);
 }
 
+/* .sbdocs-preview(라이브 컴포넌트 캔버스) 내부의 h1~span은 절대 건드리면 안 된다 —
+   컴포넌트 자신의 토큰(예: Banner의 text-element-inverse)으로 이미 올바르게
+   색이 결정되어 있는데, 여기서 강제로 덮어쓰면 아이콘/버튼 텍스트가 캔버스
+   배경과 상관없이 전부 element-primary 색으로 고정돼버린다(예: 에러 배너의
+   흰 글자가 다크 모드에서 검게 깨짐). 반드시 :not()으로 캔버스를 제외한다. */
 [data-theme='dark'] .sbdocs-title,
 [data-theme='dark'] .sb-heading,
-[data-theme='dark'] .sbdocs h1,
-[data-theme='dark'] .sbdocs h2,
-[data-theme='dark'] .sbdocs h3,
-[data-theme='dark'] .sbdocs h4,
-[data-theme='dark'] .sbdocs p,
-[data-theme='dark'] .sbdocs li,
-[data-theme='dark'] .sbdocs span {
+[data-theme='dark'] .sbdocs :is(h1, h2, h3, h4, p, li, span):not(.sbdocs-preview, .sbdocs-preview *) {
   color: var(--sol-element-primary);
 }
 
+/* .sbdocs-preview가 실제 라이브 캔버스 카드다 (.sb-previewBlock은 숨은
+   로딩 placeholder라 rect가 0이라 실제로는 아무 효과가 없다). */
+[data-theme='dark'] .sbdocs-preview,
 [data-theme='dark'] .sb-previewBlock {
   background-color: var(--sol-surface-container-low);
   border-color: var(--sol-border-solid);
@@ -75,7 +77,19 @@
   background-color: var(--sol-surface-container) !important;
 }
 
-[data-theme='dark'] .sb-unstyled,
+/* Controls 패널의 네이티브 input/select/textarea — 브라우저 기본 흰 배경 그대로라
+   다크에서 눈에 튄다. */
+[data-theme='dark'] .docblock-argstable input,
+[data-theme='dark'] .docblock-argstable select,
+[data-theme='dark'] .docblock-argstable textarea {
+  background-color: var(--sol-surface-container) !important;
+  color: var(--sol-element-primary) !important;
+  border-color: var(--sol-border-solid) !important;
+}
+
+/* 주의: `sb-unstyled`은 코드블록 전용이 아니라 title(h1)에도 똑같이 붙는
+   범용 클래스라, 이 셀렉터로 잡으면 타이틀 뒤에도 똑같이 배경이 깔린다.
+   반드시 pre/code 태그로 좁혀서 지정해야 한다. */
 [data-theme='dark'] .docblock-code-toggle,
 [data-theme='dark'] .sbdocs pre,
 [data-theme='dark'] .sbdocs code {
