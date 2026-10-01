@@ -1,0 +1,84 @@
+/* @storybook/addon-docs의 Docs 페이지 크롬(미리보기 카드, props 테이블, 제목 등)은
+   디자인 시스템 토큰과 무관한 Storybook 자체 스타일이라, data-theme이 dark로 바뀌어도
+   그대로 하얗게 남는다. 여기서 우리 sol 토큰으로 직접 덮어쓴다. */
+
+[data-theme='dark'] .sbdocs-wrapper,
+[data-theme='dark'] .sbdocs-content {
+  background-color: var(--sol-surface);
+  color: var(--sol-element-primary);
+}
+
+[data-theme='dark'] .sbdocs-title,
+[data-theme='dark'] .sb-heading,
+[data-theme='dark'] .sbdocs h1,
+[data-theme='dark'] .sbdocs h2,
+[data-theme='dark'] .sbdocs h3,
+[data-theme='dark'] .sbdocs h4,
+[data-theme='dark'] .sbdocs p,
+[data-theme='dark'] .sbdocs li,
+[data-theme='dark'] .sbdocs span {
+  color: var(--sol-element-primary);
+}
+
+[data-theme='dark'] .sb-previewBlock {
+  background-color: var(--sol-surface-container-low);
+  border-color: var(--sol-border-solid);
+}
+
+/* 줌/리셋 툴바 바 — Storybook이 emotion으로 생성하는 랜덤 클래스(css-xxxxx)라
+   이름으로 못 잡고, .sbdocs-preview의 첫 번째 자식(.docs-story 앞)이라는
+   구조로만 특정 가능하다. */
+[data-theme='dark'] .sbdocs-preview > div:first-child {
+  background-color: var(--sol-surface-container);
+  border-color: var(--sol-border-solid);
+  color: var(--sol-element-secondary);
+}
+
+[data-theme='dark'] .sb-previewBlock_header {
+  background-color: var(--sol-surface-container);
+  border-color: var(--sol-border-solid);
+  color: var(--sol-element-secondary);
+}
+
+[data-theme='dark'] .sb-argstableBlock {
+  background-color: var(--sol-surface-container-low);
+  border-color: var(--sol-border-solid);
+}
+
+[data-theme='dark'] .sb-argstableBlock-head,
+[data-theme='dark'] .sb-argstableBlock-body,
+[data-theme='dark'] .sb-argstableBlock th,
+[data-theme='dark'] .sb-argstableBlock td {
+  background-color: transparent;
+  color: var(--sol-element-primary);
+  border-color: var(--sol-border-solid);
+}
+
+[data-theme='dark'] .sb-argstableBlock-summary {
+  color: var(--sol-element-secondary);
+}
+
+/* 실제 렌더되는 Controls 테이블은 위 .sb-argstableBlock*이 아니라
+   .docblock-argstable* 클래스를 쓴다(.sb-argstableBlock*은 로딩 placeholder
+   용 숨은 템플릿). 셀 하나하나에 emotion이 흰 배경을 랜덤 클래스로 박아넣어서
+   !important 없이는 못 이긴다. */
+[data-theme='dark'] .docblock-argstable,
+[data-theme='dark'] .docblock-argstable-body,
+[data-theme='dark'] .docblock-argstable th,
+[data-theme='dark'] .docblock-argstable td {
+  background-color: var(--sol-surface-container-low) !important;
+  color: var(--sol-element-primary) !important;
+  border-color: var(--sol-border-solid) !important;
+}
+
+[data-theme='dark'] .docblock-argstable thead th {
+  background-color: var(--sol-surface-container) !important;
+}
+
+[data-theme='dark'] .sb-unstyled,
+[data-theme='dark'] .docblock-code-toggle,
+[data-theme='dark'] .sbdocs pre,
+[data-theme='dark'] .sbdocs code {
+  background-color: var(--sol-surface-container);
+  color: var(--sol-element-primary);
+}

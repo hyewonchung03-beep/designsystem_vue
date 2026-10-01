@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/vue3-vite';
 import { onUnmounted } from 'vue';
 import '../src-vue/style.css';
+import './docs-dark.css';
 
 // React storybook(.storybook/preview.tsx)과 동일한 Theme 툴바 — data-theme을
 // <html>에 설정하면 tokens/semantic/color.css의 [data-theme='dark'] 값으로 전환된다.
